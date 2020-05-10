@@ -7,23 +7,177 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		90042E222465B0EA00EB321F /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90042E212465B0EA00EB321F /* Section.swift */; };
+		9020926A2467648000BC4B9D /* IsAccessibilityElementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902092682467648000BC4B9D /* IsAccessibilityElementViewController.swift */; };
+		9020926B2467648000BC4B9D /* IsAccessibilityElementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 902092692467648000BC4B9D /* IsAccessibilityElementViewController.xib */; };
+		9020926E246765F500BC4B9D /* AccessibilityConfigurableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020926D246765F500BC4B9D /* AccessibilityConfigurableViewController.swift */; };
+		90209279246825AF00BC4B9D /* PitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90209278246825AF00BC4B9D /* PitchViewController.swift */; };
+		9020927D246825CB00BC4B9D /* AccessibilityFrameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020927A246825CA00BC4B9D /* AccessibilityFrameViewController.swift */; };
+		9020927E246825CB00BC4B9D /* AccessibilityActivationPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020927B246825CA00BC4B9D /* AccessibilityActivationPointViewController.swift */; };
+		9020927F246825CB00BC4B9D /* AccessibilityFrameScrollViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020927C246825CA00BC4B9D /* AccessibilityFrameScrollViewViewController.swift */; };
+		90209285246825D700BC4B9D /* AccessibilityLanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90209280246825D600BC4B9D /* AccessibilityLanguageViewController.swift */; };
+		90209286246825D700BC4B9D /* AccessibilityHintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90209281246825D600BC4B9D /* AccessibilityHintViewController.swift */; };
+		90209287246825D700BC4B9D /* AccessibilityValueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90209282246825D700BC4B9D /* AccessibilityValueViewController.swift */; };
+		90209288246825D700BC4B9D /* AccessibilityTraitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90209283246825D700BC4B9D /* AccessibilityTraitsViewController.swift */; };
+		90209289246825D700BC4B9D /* AccessibilityLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90209284246825D700BC4B9D /* AccessibilityLabelViewController.swift */; };
+		9020928C2468299F00BC4B9D /* AccessibilityLabelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9020928B2468299F00BC4B9D /* AccessibilityLabelViewController.xib */; };
+		9020928E24682A6B00BC4B9D /* AccessibilityHintViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9020928D24682A6B00BC4B9D /* AccessibilityHintViewController.xib */; };
+		9020929024682ADF00BC4B9D /* AccessibilityValueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9020928F24682ADF00BC4B9D /* AccessibilityValueViewController.xib */; };
+		9020929224682B5500BC4B9D /* AccessibilityLanguageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9020929124682B5500BC4B9D /* AccessibilityLanguageViewController.xib */; };
+		9020929424682BB500BC4B9D /* PitchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9020929324682BB500BC4B9D /* PitchViewController.xib */; };
+		9020929624682C7800BC4B9D /* AccessibilityFrameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9020929524682C7800BC4B9D /* AccessibilityFrameViewController.xib */; };
+		9020929824682CD100BC4B9D /* AccessibilityFrameScrollViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9020929724682CD000BC4B9D /* AccessibilityFrameScrollViewViewController.xib */; };
+		9020929A24682D3A00BC4B9D /* FramesNotOverlappingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020929924682D3A00BC4B9D /* FramesNotOverlappingViewController.swift */; };
+		9020929C24682D8C00BC4B9D /* FramesNotOverlappingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9020929B24682D8C00BC4B9D /* FramesNotOverlappingViewController.xib */; };
+		9020929E24682DB100BC4B9D /* AccessibilityActivationPointViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9020929D24682DB100BC4B9D /* AccessibilityActivationPointViewController.xib */; };
+		904F7E7024674F4C000811FA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 904F7E7224674F4C000811FA /* Localizable.strings */; };
+		904F7E7524675131000811FA /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904F7E7424675131000811FA /* Identifier.swift */; };
+		904F7E772467535C000811FA /* TitlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904F7E762467535C000811FA /* TitlesViewController.swift */; };
+		904F7E7924675E12000811FA /* BookSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904F7E7824675E12000811FA /* BookSections.swift */; };
 		909630AB2465A99D0056333C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909630AA2465A99D0056333C /* AppDelegate.swift */; };
 		909630AD2465A99D0056333C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909630AC2465A99D0056333C /* SceneDelegate.swift */; };
-		909630AF2465A99D0056333C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909630AE2465A99D0056333C /* ViewController.swift */; };
-		909630B22465A99D0056333C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 909630B02465A99D0056333C /* Main.storyboard */; };
+		909630AF2465A99D0056333C /* SectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909630AE2465A99D0056333C /* SectionsViewController.swift */; };
 		909630B42465A99E0056333C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 909630B32465A99E0056333C /* Assets.xcassets */; };
-		909630B72465A99E0056333C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 909630B52465A99E0056333C /* LaunchScreen.storyboard */; };
+		90E77B082467441700574FD2 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E77B072467441700574FD2 /* Localizable.swift */; };
+		90F707BA24683CB0006CDE08 /* CustomElementsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F707B924683CB0006CDE08 /* CustomElementsViewController.xib */; };
+		90F707BC24683CBC006CDE08 /* CustomElementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F707BB24683CBC006CDE08 /* CustomElementsViewController.swift */; };
+		90F707BE24683D06006CDE08 /* PunctuationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F707BD24683D06006CDE08 /* PunctuationViewController.swift */; };
+		90F707C024683D15006CDE08 /* SpellOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F707BF24683D15006CDE08 /* SpellOutViewController.swift */; };
+		90F707C224683D27006CDE08 /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F707C124683D27006CDE08 /* LanguageViewController.swift */; };
+		90F707C424683D3B006CDE08 /* PhoneticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F707C324683D3B006CDE08 /* PhoneticViewController.swift */; };
+		90F707C624683DC8006CDE08 /* PunctuationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F707C524683DC8006CDE08 /* PunctuationViewController.xib */; };
+		90F707C824683DDF006CDE08 /* SpellOutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F707C724683DDF006CDE08 /* SpellOutViewController.xib */; };
+		90F707CA24683DF0006CDE08 /* LanguageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F707C924683DF0006CDE08 /* LanguageViewController.xib */; };
+		90F707CC24683E04006CDE08 /* PhoneticViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F707CB24683E04006CDE08 /* PhoneticViewController.xib */; };
+		90F707CE24683F2B006CDE08 /* AccessibilityTraitsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F707CD24683F2B006CDE08 /* AccessibilityTraitsViewController.xib */; };
+		90F707D024683F6F006CDE08 /* AccessibilityElementsHiddenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F707CF24683F6F006CDE08 /* AccessibilityElementsHiddenViewController.swift */; };
+		90F707D224683FAA006CDE08 /* AccessibilityViewIsModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F707D124683FAA006CDE08 /* AccessibilityViewIsModalViewController.swift */; };
+		90F707D424683FB2006CDE08 /* AccessibilityElementsHiddenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F707D324683FB2006CDE08 /* AccessibilityElementsHiddenViewController.xib */; };
+		90F707D624683FBF006CDE08 /* AccessibilityViewIsModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F707D524683FBF006CDE08 /* AccessibilityViewIsModalViewController.xib */; };
+		90F707D824684023006CDE08 /* AccessibilityElementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F707D724684023006CDE08 /* AccessibilityElementsViewController.swift */; };
+		90F707DA24684079006CDE08 /* AccessibilityElementsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F707D924684079006CDE08 /* AccessibilityElementsViewController.xib */; };
+		90F707DC24684091006CDE08 /* GroupViewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F707DB24684091006CDE08 /* GroupViewsViewController.swift */; };
+		90F707DE246840A3006CDE08 /* GroupViewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F707DD246840A3006CDE08 /* GroupViewsViewController.xib */; };
+		90F707E0246840C2006CDE08 /* ShouldGroupAccessibilityChildrenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F707DF246840C2006CDE08 /* ShouldGroupAccessibilityChildrenViewController.swift */; };
+		90F707E2246840E6006CDE08 /* ShouldGroupAccessibilityChildrenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F707E1246840E6006CDE08 /* ShouldGroupAccessibilityChildrenViewController.xib */; };
+		90F707E4246840FE006CDE08 /* AccessibilityNavigationStyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F707E3246840FE006CDE08 /* AccessibilityNavigationStyleViewController.swift */; };
+		90F707E62468411C006CDE08 /* AccessibilityNavigationStyleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F707E52468411C006CDE08 /* AccessibilityNavigationStyleViewController.xib */; };
+		90F707E82468414C006CDE08 /* AccessibilityActivateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F707E72468414C006CDE08 /* AccessibilityActivateViewController.swift */; };
+		90F707EA2468415F006CDE08 /* AccessibilityActivateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F707E92468415F006CDE08 /* AccessibilityActivateViewController.xib */; };
+		90F707EC24684173006CDE08 /* AccessibilityCustomActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F707EB24684173006CDE08 /* AccessibilityCustomActionViewController.swift */; };
+		90F707EE24684185006CDE08 /* AccessibilityCustomActionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F707ED24684185006CDE08 /* AccessibilityCustomActionViewController.xib */; };
+		90F707F024684198006CDE08 /* AccessibilityScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F707EF24684198006CDE08 /* AccessibilityScrollViewController.swift */; };
+		90F707F2246841BC006CDE08 /* AccessibilityScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F707F1246841BC006CDE08 /* AccessibilityScrollViewController.xib */; };
+		90F707F4246841E4006CDE08 /* AccessibilityDecrementAndIncrementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F707F3246841E3006CDE08 /* AccessibilityDecrementAndIncrementViewController.swift */; };
+		90F707F6246841F4006CDE08 /* AccessibilityDecrementAndIncrementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F707F5246841F4006CDE08 /* AccessibilityDecrementAndIncrementViewController.xib */; };
+		90F707F82468420B006CDE08 /* AccessibilityPerformEscapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F707F72468420B006CDE08 /* AccessibilityPerformEscapeViewController.swift */; };
+		90F707FA24684221006CDE08 /* AccessibilityPerformEscapeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F707F924684221006CDE08 /* AccessibilityPerformEscapeViewController.xib */; };
+		90F707FC24684234006CDE08 /* AccessibilityPerformMagicTapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F707FB24684234006CDE08 /* AccessibilityPerformMagicTapViewController.swift */; };
+		90F707FE2468424B006CDE08 /* AccessibilityPerformMagicTapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F707FD2468424B006CDE08 /* AccessibilityPerformMagicTapViewController.xib */; };
+		90F7080024684269006CDE08 /* ScreenChangedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F707FF24684269006CDE08 /* ScreenChangedViewController.swift */; };
+		90F7080224684281006CDE08 /* ScreenChangedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F7080124684281006CDE08 /* ScreenChangedViewController.xib */; };
+		90F7080424684293006CDE08 /* LayoutChangedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F7080324684293006CDE08 /* LayoutChangedViewController.swift */; };
+		90F70806246842AC006CDE08 /* LayoutChangedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F70805246842AC006CDE08 /* LayoutChangedViewController.xib */; };
+		90F70808246842C3006CDE08 /* PageScrolledViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F70807246842C3006CDE08 /* PageScrolledViewController.swift */; };
+		90F7080A246842D7006CDE08 /* PageScrolledViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F70809246842D7006CDE08 /* PageScrolledViewController.xib */; };
+		90F7080C246842EF006CDE08 /* AnnouncementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F7080B246842EF006CDE08 /* AnnouncementViewController.swift */; };
+		90F7080E2468430C006CDE08 /* AnnouncementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F7080D2468430C006CDE08 /* AnnouncementViewController.xib */; };
+		90F7081024684324006CDE08 /* AnnouncementDidFinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F7080F24684324006CDE08 /* AnnouncementDidFinishViewController.swift */; };
+		90F708122468433E006CDE08 /* AnnouncementDidFinishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F708112468433E006CDE08 /* AnnouncementDidFinishViewController.xib */; };
+		90F7081424684364006CDE08 /* DynamicLabelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F7081324684364006CDE08 /* DynamicLabelsViewController.swift */; };
+		90F708162468437B006CDE08 /* DynamicLabelsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F708152468437B006CDE08 /* DynamicLabelsViewController.xib */; };
+		90F708182468438B006CDE08 /* DynamicImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F708172468438B006CDE08 /* DynamicImagesViewController.swift */; };
+		90F7081A2468439D006CDE08 /* DynamicImagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F708192468439D006CDE08 /* DynamicImagesViewController.xib */; };
+		90F7081C246843B2006CDE08 /* LargeContentViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F7081B246843B2006CDE08 /* LargeContentViewerViewController.swift */; };
+		90F7081E24684531006CDE08 /* LargeContentViewerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F7081D24684531006CDE08 /* LargeContentViewerViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		90042E212465B0EA00EB321F /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		902092682467648000BC4B9D /* IsAccessibilityElementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsAccessibilityElementViewController.swift; sourceTree = "<group>"; };
+		902092692467648000BC4B9D /* IsAccessibilityElementViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IsAccessibilityElementViewController.xib; sourceTree = "<group>"; };
+		9020926D246765F500BC4B9D /* AccessibilityConfigurableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityConfigurableViewController.swift; sourceTree = "<group>"; };
+		90209278246825AF00BC4B9D /* PitchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchViewController.swift; sourceTree = "<group>"; };
+		9020927A246825CA00BC4B9D /* AccessibilityFrameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessibilityFrameViewController.swift; sourceTree = "<group>"; };
+		9020927B246825CA00BC4B9D /* AccessibilityActivationPointViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessibilityActivationPointViewController.swift; sourceTree = "<group>"; };
+		9020927C246825CA00BC4B9D /* AccessibilityFrameScrollViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessibilityFrameScrollViewViewController.swift; sourceTree = "<group>"; };
+		90209280246825D600BC4B9D /* AccessibilityLanguageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessibilityLanguageViewController.swift; sourceTree = "<group>"; };
+		90209281246825D600BC4B9D /* AccessibilityHintViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessibilityHintViewController.swift; sourceTree = "<group>"; };
+		90209282246825D700BC4B9D /* AccessibilityValueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessibilityValueViewController.swift; sourceTree = "<group>"; };
+		90209283246825D700BC4B9D /* AccessibilityTraitsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessibilityTraitsViewController.swift; sourceTree = "<group>"; };
+		90209284246825D700BC4B9D /* AccessibilityLabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessibilityLabelViewController.swift; sourceTree = "<group>"; };
+		9020928B2468299F00BC4B9D /* AccessibilityLabelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccessibilityLabelViewController.xib; sourceTree = "<group>"; };
+		9020928D24682A6B00BC4B9D /* AccessibilityHintViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccessibilityHintViewController.xib; sourceTree = "<group>"; };
+		9020928F24682ADF00BC4B9D /* AccessibilityValueViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccessibilityValueViewController.xib; sourceTree = "<group>"; };
+		9020929124682B5500BC4B9D /* AccessibilityLanguageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccessibilityLanguageViewController.xib; sourceTree = "<group>"; };
+		9020929324682BB500BC4B9D /* PitchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PitchViewController.xib; sourceTree = "<group>"; };
+		9020929524682C7800BC4B9D /* AccessibilityFrameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccessibilityFrameViewController.xib; sourceTree = "<group>"; };
+		9020929724682CD000BC4B9D /* AccessibilityFrameScrollViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccessibilityFrameScrollViewViewController.xib; sourceTree = "<group>"; };
+		9020929924682D3A00BC4B9D /* FramesNotOverlappingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FramesNotOverlappingViewController.swift; sourceTree = "<group>"; };
+		9020929B24682D8C00BC4B9D /* FramesNotOverlappingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FramesNotOverlappingViewController.xib; sourceTree = "<group>"; };
+		9020929D24682DB100BC4B9D /* AccessibilityActivationPointViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccessibilityActivationPointViewController.xib; sourceTree = "<group>"; };
+		904F7E7124674F4C000811FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		904F7E7424675131000811FA /* Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
+		904F7E762467535C000811FA /* TitlesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlesViewController.swift; sourceTree = "<group>"; };
+		904F7E7824675E12000811FA /* BookSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSections.swift; sourceTree = "<group>"; };
 		909630A72465A99D0056333C /* Accessibility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Accessibility.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		909630AA2465A99D0056333C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		909630AC2465A99D0056333C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		909630AE2465A99D0056333C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		909630B12465A99D0056333C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		909630AE2465A99D0056333C /* SectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionsViewController.swift; sourceTree = "<group>"; };
 		909630B32465A99E0056333C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		909630B62465A99E0056333C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		909630B82465A99E0056333C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90E77B072467441700574FD2 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		90F707B924683CB0006CDE08 /* CustomElementsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomElementsViewController.xib; sourceTree = "<group>"; };
+		90F707BB24683CBC006CDE08 /* CustomElementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomElementsViewController.swift; sourceTree = "<group>"; };
+		90F707BD24683D06006CDE08 /* PunctuationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunctuationViewController.swift; sourceTree = "<group>"; };
+		90F707BF24683D15006CDE08 /* SpellOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellOutViewController.swift; sourceTree = "<group>"; };
+		90F707C124683D27006CDE08 /* LanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
+		90F707C324683D3B006CDE08 /* PhoneticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneticViewController.swift; sourceTree = "<group>"; };
+		90F707C524683DC8006CDE08 /* PunctuationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PunctuationViewController.xib; sourceTree = "<group>"; };
+		90F707C724683DDF006CDE08 /* SpellOutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpellOutViewController.xib; sourceTree = "<group>"; };
+		90F707C924683DF0006CDE08 /* LanguageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageViewController.xib; sourceTree = "<group>"; };
+		90F707CB24683E04006CDE08 /* PhoneticViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhoneticViewController.xib; sourceTree = "<group>"; };
+		90F707CD24683F2B006CDE08 /* AccessibilityTraitsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccessibilityTraitsViewController.xib; sourceTree = "<group>"; };
+		90F707CF24683F6F006CDE08 /* AccessibilityElementsHiddenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityElementsHiddenViewController.swift; sourceTree = "<group>"; };
+		90F707D124683FAA006CDE08 /* AccessibilityViewIsModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityViewIsModalViewController.swift; sourceTree = "<group>"; };
+		90F707D324683FB2006CDE08 /* AccessibilityElementsHiddenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccessibilityElementsHiddenViewController.xib; sourceTree = "<group>"; };
+		90F707D524683FBF006CDE08 /* AccessibilityViewIsModalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccessibilityViewIsModalViewController.xib; sourceTree = "<group>"; };
+		90F707D724684023006CDE08 /* AccessibilityElementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityElementsViewController.swift; sourceTree = "<group>"; };
+		90F707D924684079006CDE08 /* AccessibilityElementsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccessibilityElementsViewController.xib; sourceTree = "<group>"; };
+		90F707DB24684091006CDE08 /* GroupViewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewsViewController.swift; sourceTree = "<group>"; };
+		90F707DD246840A3006CDE08 /* GroupViewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupViewsViewController.xib; sourceTree = "<group>"; };
+		90F707DF246840C2006CDE08 /* ShouldGroupAccessibilityChildrenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShouldGroupAccessibilityChildrenViewController.swift; sourceTree = "<group>"; };
+		90F707E1246840E6006CDE08 /* ShouldGroupAccessibilityChildrenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShouldGroupAccessibilityChildrenViewController.xib; sourceTree = "<group>"; };
+		90F707E3246840FE006CDE08 /* AccessibilityNavigationStyleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityNavigationStyleViewController.swift; sourceTree = "<group>"; };
+		90F707E52468411C006CDE08 /* AccessibilityNavigationStyleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccessibilityNavigationStyleViewController.xib; sourceTree = "<group>"; };
+		90F707E72468414C006CDE08 /* AccessibilityActivateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityActivateViewController.swift; sourceTree = "<group>"; };
+		90F707E92468415F006CDE08 /* AccessibilityActivateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccessibilityActivateViewController.xib; sourceTree = "<group>"; };
+		90F707EB24684173006CDE08 /* AccessibilityCustomActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityCustomActionViewController.swift; sourceTree = "<group>"; };
+		90F707ED24684185006CDE08 /* AccessibilityCustomActionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccessibilityCustomActionViewController.xib; sourceTree = "<group>"; };
+		90F707EF24684198006CDE08 /* AccessibilityScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityScrollViewController.swift; sourceTree = "<group>"; };
+		90F707F1246841BC006CDE08 /* AccessibilityScrollViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccessibilityScrollViewController.xib; sourceTree = "<group>"; };
+		90F707F3246841E3006CDE08 /* AccessibilityDecrementAndIncrementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityDecrementAndIncrementViewController.swift; sourceTree = "<group>"; };
+		90F707F5246841F4006CDE08 /* AccessibilityDecrementAndIncrementViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccessibilityDecrementAndIncrementViewController.xib; sourceTree = "<group>"; };
+		90F707F72468420B006CDE08 /* AccessibilityPerformEscapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityPerformEscapeViewController.swift; sourceTree = "<group>"; };
+		90F707F924684221006CDE08 /* AccessibilityPerformEscapeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccessibilityPerformEscapeViewController.xib; sourceTree = "<group>"; };
+		90F707FB24684234006CDE08 /* AccessibilityPerformMagicTapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityPerformMagicTapViewController.swift; sourceTree = "<group>"; };
+		90F707FD2468424B006CDE08 /* AccessibilityPerformMagicTapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccessibilityPerformMagicTapViewController.xib; sourceTree = "<group>"; };
+		90F707FF24684269006CDE08 /* ScreenChangedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenChangedViewController.swift; sourceTree = "<group>"; };
+		90F7080124684281006CDE08 /* ScreenChangedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScreenChangedViewController.xib; sourceTree = "<group>"; };
+		90F7080324684293006CDE08 /* LayoutChangedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutChangedViewController.swift; sourceTree = "<group>"; };
+		90F70805246842AC006CDE08 /* LayoutChangedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LayoutChangedViewController.xib; sourceTree = "<group>"; };
+		90F70807246842C3006CDE08 /* PageScrolledViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageScrolledViewController.swift; sourceTree = "<group>"; };
+		90F70809246842D7006CDE08 /* PageScrolledViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PageScrolledViewController.xib; sourceTree = "<group>"; };
+		90F7080B246842EF006CDE08 /* AnnouncementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementViewController.swift; sourceTree = "<group>"; };
+		90F7080D2468430C006CDE08 /* AnnouncementViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnnouncementViewController.xib; sourceTree = "<group>"; };
+		90F7080F24684324006CDE08 /* AnnouncementDidFinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementDidFinishViewController.swift; sourceTree = "<group>"; };
+		90F708112468433E006CDE08 /* AnnouncementDidFinishViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnnouncementDidFinishViewController.xib; sourceTree = "<group>"; };
+		90F7081324684364006CDE08 /* DynamicLabelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicLabelsViewController.swift; sourceTree = "<group>"; };
+		90F708152468437B006CDE08 /* DynamicLabelsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicLabelsViewController.xib; sourceTree = "<group>"; };
+		90F708172468438B006CDE08 /* DynamicImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicImagesViewController.swift; sourceTree = "<group>"; };
+		90F708192468439D006CDE08 /* DynamicImagesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicImagesViewController.xib; sourceTree = "<group>"; };
+		90F7081B246843B2006CDE08 /* LargeContentViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeContentViewerViewController.swift; sourceTree = "<group>"; };
+		90F7081D24684531006CDE08 /* LargeContentViewerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LargeContentViewerViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +191,167 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		90042E202465B0D500EB321F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				904F7E7424675131000811FA /* Identifier.swift */,
+				90042E212465B0EA00EB321F /* Section.swift */,
+				90E77B072467441700574FD2 /* Localizable.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9020926C246765D500BC4B9D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9020926D246765F500BC4B9D /* AccessibilityConfigurableViewController.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		9020926F2468250700BC4B9D /* Accessibility Element */ = {
+			isa = PBXGroup;
+			children = (
+				902092682467648000BC4B9D /* IsAccessibilityElementViewController.swift */,
+				902092692467648000BC4B9D /* IsAccessibilityElementViewController.xib */,
+				90F707BB24683CBC006CDE08 /* CustomElementsViewController.swift */,
+				90F707B924683CB0006CDE08 /* CustomElementsViewController.xib */,
+			);
+			path = "Accessibility Element";
+			sourceTree = "<group>";
+		};
+		902092702468252200BC4B9D /* Accessibility Semantics */ = {
+			isa = PBXGroup;
+			children = (
+				90209284246825D700BC4B9D /* AccessibilityLabelViewController.swift */,
+				9020928B2468299F00BC4B9D /* AccessibilityLabelViewController.xib */,
+				90209281246825D600BC4B9D /* AccessibilityHintViewController.swift */,
+				9020928D24682A6B00BC4B9D /* AccessibilityHintViewController.xib */,
+				90209283246825D700BC4B9D /* AccessibilityTraitsViewController.swift */,
+				90F707CD24683F2B006CDE08 /* AccessibilityTraitsViewController.xib */,
+				90209282246825D700BC4B9D /* AccessibilityValueViewController.swift */,
+				9020928F24682ADF00BC4B9D /* AccessibilityValueViewController.xib */,
+				90209280246825D600BC4B9D /* AccessibilityLanguageViewController.swift */,
+				9020929124682B5500BC4B9D /* AccessibilityLanguageViewController.xib */,
+			);
+			path = "Accessibility Semantics";
+			sourceTree = "<group>";
+		};
+		902092712468253200BC4B9D /* Customizing Speech */ = {
+			isa = PBXGroup;
+			children = (
+				90209278246825AF00BC4B9D /* PitchViewController.swift */,
+				9020929324682BB500BC4B9D /* PitchViewController.xib */,
+				90F707BD24683D06006CDE08 /* PunctuationViewController.swift */,
+				90F707C524683DC8006CDE08 /* PunctuationViewController.xib */,
+				90F707BF24683D15006CDE08 /* SpellOutViewController.swift */,
+				90F707C724683DDF006CDE08 /* SpellOutViewController.xib */,
+				90F707C124683D27006CDE08 /* LanguageViewController.swift */,
+				90F707C924683DF0006CDE08 /* LanguageViewController.xib */,
+				90F707C324683D3B006CDE08 /* PhoneticViewController.swift */,
+				90F707CB24683E04006CDE08 /* PhoneticViewController.xib */,
+			);
+			path = "Customizing Speech";
+			sourceTree = "<group>";
+		};
+		902092722468254600BC4B9D /* Discoverability */ = {
+			isa = PBXGroup;
+			children = (
+				90F707CF24683F6F006CDE08 /* AccessibilityElementsHiddenViewController.swift */,
+				90F707D324683FB2006CDE08 /* AccessibilityElementsHiddenViewController.xib */,
+				90F707D124683FAA006CDE08 /* AccessibilityViewIsModalViewController.swift */,
+				90F707D524683FBF006CDE08 /* AccessibilityViewIsModalViewController.xib */,
+			);
+			path = Discoverability;
+			sourceTree = "<group>";
+		};
+		902092732468255F00BC4B9D /* FocusArea */ = {
+			isa = PBXGroup;
+			children = (
+				9020927A246825CA00BC4B9D /* AccessibilityFrameViewController.swift */,
+				9020929524682C7800BC4B9D /* AccessibilityFrameViewController.xib */,
+				9020927C246825CA00BC4B9D /* AccessibilityFrameScrollViewViewController.swift */,
+				9020929724682CD000BC4B9D /* AccessibilityFrameScrollViewViewController.xib */,
+				9020929924682D3A00BC4B9D /* FramesNotOverlappingViewController.swift */,
+				9020929B24682D8C00BC4B9D /* FramesNotOverlappingViewController.xib */,
+				9020927B246825CA00BC4B9D /* AccessibilityActivationPointViewController.swift */,
+				9020929D24682DB100BC4B9D /* AccessibilityActivationPointViewController.xib */,
+			);
+			path = FocusArea;
+			sourceTree = "<group>";
+		};
+		902092742468256E00BC4B9D /* GroupingAndOrder */ = {
+			isa = PBXGroup;
+			children = (
+				90F707D724684023006CDE08 /* AccessibilityElementsViewController.swift */,
+				90F707D924684079006CDE08 /* AccessibilityElementsViewController.xib */,
+				90F707DB24684091006CDE08 /* GroupViewsViewController.swift */,
+				90F707DD246840A3006CDE08 /* GroupViewsViewController.xib */,
+				90F707DF246840C2006CDE08 /* ShouldGroupAccessibilityChildrenViewController.swift */,
+				90F707E1246840E6006CDE08 /* ShouldGroupAccessibilityChildrenViewController.xib */,
+				90F707E3246840FE006CDE08 /* AccessibilityNavigationStyleViewController.swift */,
+				90F707E52468411C006CDE08 /* AccessibilityNavigationStyleViewController.xib */,
+			);
+			path = GroupingAndOrder;
+			sourceTree = "<group>";
+		};
+		902092752468257800BC4B9D /* Accessibility Action */ = {
+			isa = PBXGroup;
+			children = (
+				90F707E72468414C006CDE08 /* AccessibilityActivateViewController.swift */,
+				90F707E92468415F006CDE08 /* AccessibilityActivateViewController.xib */,
+				90F707EB24684173006CDE08 /* AccessibilityCustomActionViewController.swift */,
+				90F707ED24684185006CDE08 /* AccessibilityCustomActionViewController.xib */,
+				90F707EF24684198006CDE08 /* AccessibilityScrollViewController.swift */,
+				90F707F1246841BC006CDE08 /* AccessibilityScrollViewController.xib */,
+				90F707F3246841E3006CDE08 /* AccessibilityDecrementAndIncrementViewController.swift */,
+				90F707F5246841F4006CDE08 /* AccessibilityDecrementAndIncrementViewController.xib */,
+				90F707F72468420B006CDE08 /* AccessibilityPerformEscapeViewController.swift */,
+				90F707F924684221006CDE08 /* AccessibilityPerformEscapeViewController.xib */,
+				90F707FB24684234006CDE08 /* AccessibilityPerformMagicTapViewController.swift */,
+				90F707FD2468424B006CDE08 /* AccessibilityPerformMagicTapViewController.xib */,
+			);
+			path = "Accessibility Action";
+			sourceTree = "<group>";
+		};
+		902092762468258D00BC4B9D /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				90F707FF24684269006CDE08 /* ScreenChangedViewController.swift */,
+				90F7080124684281006CDE08 /* ScreenChangedViewController.xib */,
+				90F7080324684293006CDE08 /* LayoutChangedViewController.swift */,
+				90F70805246842AC006CDE08 /* LayoutChangedViewController.xib */,
+				90F70807246842C3006CDE08 /* PageScrolledViewController.swift */,
+				90F70809246842D7006CDE08 /* PageScrolledViewController.xib */,
+				90F7080B246842EF006CDE08 /* AnnouncementViewController.swift */,
+				90F7080D2468430C006CDE08 /* AnnouncementViewController.xib */,
+				90F7080F24684324006CDE08 /* AnnouncementDidFinishViewController.swift */,
+				90F708112468433E006CDE08 /* AnnouncementDidFinishViewController.xib */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		902092772468259600BC4B9D /* Dynamic Type */ = {
+			isa = PBXGroup;
+			children = (
+				90F7081324684364006CDE08 /* DynamicLabelsViewController.swift */,
+				90F708152468437B006CDE08 /* DynamicLabelsViewController.xib */,
+				90F708172468438B006CDE08 /* DynamicImagesViewController.swift */,
+				90F708192468439D006CDE08 /* DynamicImagesViewController.xib */,
+				90F7081B246843B2006CDE08 /* LargeContentViewerViewController.swift */,
+				90F7081D24684531006CDE08 /* LargeContentViewerViewController.xib */,
+			);
+			path = "Dynamic Type";
+			sourceTree = "<group>";
+		};
+		904F7E7A24675F37000811FA /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				904F7E7824675E12000811FA /* BookSections.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		9096309E2465A99D0056333C = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +371,59 @@
 		909630A92465A99D0056333C /* Accessibility */ = {
 			isa = PBXGroup;
 			children = (
-				909630AA2465A99D0056333C /* AppDelegate.swift */,
-				909630AC2465A99D0056333C /* SceneDelegate.swift */,
-				909630AE2465A99D0056333C /* ViewController.swift */,
-				909630B02465A99D0056333C /* Main.storyboard */,
-				909630B32465A99E0056333C /* Assets.xcassets */,
-				909630B52465A99E0056333C /* LaunchScreen.storyboard */,
-				909630B82465A99E0056333C /* Info.plist */,
+				9020926C246765D500BC4B9D /* Protocols */,
+				904F7E7A24675F37000811FA /* Data */,
+				909630BF2465AE450056333C /* App */,
+				90042E202465B0D500EB321F /* Models */,
+				909630BE2465AE2A0056333C /* ViewControllers */,
+				909630C02465AE640056333C /* Resources */,
 			);
 			path = Accessibility;
+			sourceTree = "<group>";
+		};
+		909630BE2465AE2A0056333C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				90F7081F246845C7006CDE08 /* Main Menu */,
+				9020926F2468250700BC4B9D /* Accessibility Element */,
+				902092702468252200BC4B9D /* Accessibility Semantics */,
+				902092712468253200BC4B9D /* Customizing Speech */,
+				902092722468254600BC4B9D /* Discoverability */,
+				902092732468255F00BC4B9D /* FocusArea */,
+				902092742468256E00BC4B9D /* GroupingAndOrder */,
+				902092752468257800BC4B9D /* Accessibility Action */,
+				902092762468258D00BC4B9D /* Notifications */,
+				902092772468259600BC4B9D /* Dynamic Type */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		909630BF2465AE450056333C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				909630AA2465A99D0056333C /* AppDelegate.swift */,
+				909630AC2465A99D0056333C /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		909630C02465AE640056333C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				909630B32465A99E0056333C /* Assets.xcassets */,
+				909630B82465A99E0056333C /* Info.plist */,
+				904F7E7224674F4C000811FA /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		90F7081F246845C7006CDE08 /* Main Menu */ = {
+			isa = PBXGroup;
+			children = (
+				909630AE2465A99D0056333C /* SectionsViewController.swift */,
+				904F7E762467535C000811FA /* TitlesViewController.swift */,
+			);
+			path = "Main Menu";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +484,44 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				909630B72465A99E0056333C /* LaunchScreen.storyboard in Resources */,
+				90F707F2246841BC006CDE08 /* AccessibilityScrollViewController.xib in Resources */,
+				90F707C824683DDF006CDE08 /* SpellOutViewController.xib in Resources */,
+				90F707D424683FB2006CDE08 /* AccessibilityElementsHiddenViewController.xib in Resources */,
+				90F707F6246841F4006CDE08 /* AccessibilityDecrementAndIncrementViewController.xib in Resources */,
+				9020928C2468299F00BC4B9D /* AccessibilityLabelViewController.xib in Resources */,
+				9020929224682B5500BC4B9D /* AccessibilityLanguageViewController.xib in Resources */,
+				90F707BA24683CB0006CDE08 /* CustomElementsViewController.xib in Resources */,
+				90F707C624683DC8006CDE08 /* PunctuationViewController.xib in Resources */,
+				90F7081A2468439D006CDE08 /* DynamicImagesViewController.xib in Resources */,
+				90F7080A246842D7006CDE08 /* PageScrolledViewController.xib in Resources */,
+				9020928E24682A6B00BC4B9D /* AccessibilityHintViewController.xib in Resources */,
+				90F707E62468411C006CDE08 /* AccessibilityNavigationStyleViewController.xib in Resources */,
+				9020929624682C7800BC4B9D /* AccessibilityFrameViewController.xib in Resources */,
+				9020929C24682D8C00BC4B9D /* FramesNotOverlappingViewController.xib in Resources */,
+				90F708122468433E006CDE08 /* AnnouncementDidFinishViewController.xib in Resources */,
+				904F7E7024674F4C000811FA /* Localizable.strings in Resources */,
+				90F707FE2468424B006CDE08 /* AccessibilityPerformMagicTapViewController.xib in Resources */,
+				90F7080E2468430C006CDE08 /* AnnouncementViewController.xib in Resources */,
+				90F7081E24684531006CDE08 /* LargeContentViewerViewController.xib in Resources */,
+				90F707EE24684185006CDE08 /* AccessibilityCustomActionViewController.xib in Resources */,
+				9020926B2467648000BC4B9D /* IsAccessibilityElementViewController.xib in Resources */,
+				9020929E24682DB100BC4B9D /* AccessibilityActivationPointViewController.xib in Resources */,
+				90F707E2246840E6006CDE08 /* ShouldGroupAccessibilityChildrenViewController.xib in Resources */,
 				909630B42465A99E0056333C /* Assets.xcassets in Resources */,
-				909630B22465A99D0056333C /* Main.storyboard in Resources */,
+				9020929824682CD100BC4B9D /* AccessibilityFrameScrollViewViewController.xib in Resources */,
+				90F708162468437B006CDE08 /* DynamicLabelsViewController.xib in Resources */,
+				90F707EA2468415F006CDE08 /* AccessibilityActivateViewController.xib in Resources */,
+				90F707DA24684079006CDE08 /* AccessibilityElementsViewController.xib in Resources */,
+				90F707FA24684221006CDE08 /* AccessibilityPerformEscapeViewController.xib in Resources */,
+				90F70806246842AC006CDE08 /* LayoutChangedViewController.xib in Resources */,
+				90F7080224684281006CDE08 /* ScreenChangedViewController.xib in Resources */,
+				90F707D624683FBF006CDE08 /* AccessibilityViewIsModalViewController.xib in Resources */,
+				9020929024682ADF00BC4B9D /* AccessibilityValueViewController.xib in Resources */,
+				90F707DE246840A3006CDE08 /* GroupViewsViewController.xib in Resources */,
+				90F707CA24683DF0006CDE08 /* LanguageViewController.xib in Resources */,
+				90F707CC24683E04006CDE08 /* PhoneticViewController.xib in Resources */,
+				90F707CE24683F2B006CDE08 /* AccessibilityTraitsViewController.xib in Resources */,
+				9020929424682BB500BC4B9D /* PitchViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,29 +532,63 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				909630AF2465A99D0056333C /* ViewController.swift in Sources */,
+				90F707FC24684234006CDE08 /* AccessibilityPerformMagicTapViewController.swift in Sources */,
+				90209279246825AF00BC4B9D /* PitchViewController.swift in Sources */,
+				90209285246825D700BC4B9D /* AccessibilityLanguageViewController.swift in Sources */,
+				90F707C224683D27006CDE08 /* LanguageViewController.swift in Sources */,
+				90F707F024684198006CDE08 /* AccessibilityScrollViewController.swift in Sources */,
+				9020927D246825CB00BC4B9D /* AccessibilityFrameViewController.swift in Sources */,
+				90F70808246842C3006CDE08 /* PageScrolledViewController.swift in Sources */,
+				904F7E7924675E12000811FA /* BookSections.swift in Sources */,
+				9020926E246765F500BC4B9D /* AccessibilityConfigurableViewController.swift in Sources */,
+				90F707D224683FAA006CDE08 /* AccessibilityViewIsModalViewController.swift in Sources */,
+				909630AF2465A99D0056333C /* SectionsViewController.swift in Sources */,
+				90F7081424684364006CDE08 /* DynamicLabelsViewController.swift in Sources */,
+				90F707C424683D3B006CDE08 /* PhoneticViewController.swift in Sources */,
+				90F7080C246842EF006CDE08 /* AnnouncementViewController.swift in Sources */,
+				90E77B082467441700574FD2 /* Localizable.swift in Sources */,
+				9020927F246825CB00BC4B9D /* AccessibilityFrameScrollViewViewController.swift in Sources */,
+				90209287246825D700BC4B9D /* AccessibilityValueViewController.swift in Sources */,
+				90209288246825D700BC4B9D /* AccessibilityTraitsViewController.swift in Sources */,
+				90F707BC24683CBC006CDE08 /* CustomElementsViewController.swift in Sources */,
+				90F707C024683D15006CDE08 /* SpellOutViewController.swift in Sources */,
+				90F707E0246840C2006CDE08 /* ShouldGroupAccessibilityChildrenViewController.swift in Sources */,
+				90F707F4246841E4006CDE08 /* AccessibilityDecrementAndIncrementViewController.swift in Sources */,
+				90F707BE24683D06006CDE08 /* PunctuationViewController.swift in Sources */,
+				90F7080424684293006CDE08 /* LayoutChangedViewController.swift in Sources */,
+				90F707DC24684091006CDE08 /* GroupViewsViewController.swift in Sources */,
+				90F707F82468420B006CDE08 /* AccessibilityPerformEscapeViewController.swift in Sources */,
+				90F707EC24684173006CDE08 /* AccessibilityCustomActionViewController.swift in Sources */,
+				904F7E772467535C000811FA /* TitlesViewController.swift in Sources */,
+				9020927E246825CB00BC4B9D /* AccessibilityActivationPointViewController.swift in Sources */,
 				909630AB2465A99D0056333C /* AppDelegate.swift in Sources */,
+				90F707D024683F6F006CDE08 /* AccessibilityElementsHiddenViewController.swift in Sources */,
+				90F7080024684269006CDE08 /* ScreenChangedViewController.swift in Sources */,
+				90F707D824684023006CDE08 /* AccessibilityElementsViewController.swift in Sources */,
+				90F7081024684324006CDE08 /* AnnouncementDidFinishViewController.swift in Sources */,
+				9020926A2467648000BC4B9D /* IsAccessibilityElementViewController.swift in Sources */,
 				909630AD2465A99D0056333C /* SceneDelegate.swift in Sources */,
+				904F7E7524675131000811FA /* Identifier.swift in Sources */,
+				9020929A24682D3A00BC4B9D /* FramesNotOverlappingViewController.swift in Sources */,
+				90F7081C246843B2006CDE08 /* LargeContentViewerViewController.swift in Sources */,
+				90F708182468438B006CDE08 /* DynamicImagesViewController.swift in Sources */,
+				90F707E4246840FE006CDE08 /* AccessibilityNavigationStyleViewController.swift in Sources */,
+				90F707E82468414C006CDE08 /* AccessibilityActivateViewController.swift in Sources */,
+				90209289246825D700BC4B9D /* AccessibilityLabelViewController.swift in Sources */,
+				90042E222465B0EA00EB321F /* Section.swift in Sources */,
+				90209286246825D700BC4B9D /* AccessibilityHintViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		909630B02465A99D0056333C /* Main.storyboard */ = {
+		904F7E7224674F4C000811FA /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				909630B12465A99D0056333C /* Base */,
+				904F7E7124674F4C000811FA /* en */,
 			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		909630B52465A99E0056333C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				909630B62465A99E0056333C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -170,6 +598,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -230,6 +659,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -286,7 +716,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 64K9ND9EDD;
-				INFOPLIST_FILE = Accessibility/Info.plist;
+				INFOPLIST_FILE = Accessibility/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +734,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 64K9ND9EDD;
-				INFOPLIST_FILE = Accessibility/Info.plist;
+				INFOPLIST_FILE = Accessibility/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

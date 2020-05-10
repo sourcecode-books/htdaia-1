@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PitchViewController" customModule="Accessibility" customModuleProvider="target">
+            <connections>
+                <outlet property="highPitchLabel" destination="r9Y-1B-w8g" id="wQL-Nb-zeU"/>
+                <outlet property="lowPitchLabel" destination="B1E-2N-XXv" id="mMl-dr-aFD"/>
+                <outlet property="view" destination="ZsK-U1-n42" id="RrJ-at-iSz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ZsK-U1-n42">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="jZW-ju-Er3">
+                    <rect key="frame" x="16" y="76" width="382" height="77"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This label is spoken with a high pitch." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r9Y-1B-w8g">
+                            <rect key="frame" x="0.0" y="0.0" width="284.5" height="20.5"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This label is spoken with a low pitch." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1E-2N-XXv">
+                            <rect key="frame" x="0.0" y="56.5" width="277.5" height="20.5"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="jZW-ju-Er3" firstAttribute="leading" secondItem="Cd9-be-4mR" secondAttribute="leading" constant="16" id="GW5-HJ-AfQ"/>
+                <constraint firstItem="jZW-ju-Er3" firstAttribute="top" secondItem="Cd9-be-4mR" secondAttribute="top" constant="32" id="KOI-XI-xFt"/>
+                <constraint firstItem="Cd9-be-4mR" firstAttribute="trailing" secondItem="jZW-ju-Er3" secondAttribute="trailing" constant="16" id="f9Z-qF-bvK"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Cd9-be-4mR"/>
+            <point key="canvasLocation" x="3362" y="1104"/>
+        </view>
+    </objects>
+</document>

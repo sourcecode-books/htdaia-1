@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccessibilityHintViewController" customModule="Accessibility" customModuleProvider="target">
+            <connections>
+                <outlet property="downloadButton" destination="2M2-Re-85O" id="uJt-5T-H2y"/>
+                <outlet property="view" destination="lGe-Tr-NVL" id="hGX-bK-LB4"/>
+                <outletCollection property="checkboxButtons" destination="6hS-D8-TuV" collectionClass="NSMutableArray" id="Uiq-DG-y56"/>
+                <outletCollection property="checkboxButtons" destination="7WA-QE-por" collectionClass="NSMutableArray" id="PMN-KH-Qqd"/>
+                <outletCollection property="checkboxButtons" destination="Yv2-dt-h1l" collectionClass="NSMutableArray" id="e3C-CV-qer"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="lGe-Tr-NVL">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The download button now has an accessibility hint that starts with a verb and tells the outcome of performing the action." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EV0-E9-j8Z">
+                    <rect key="frame" x="16" y="76" width="382" height="64.5"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vWi-pD-aOd">
+                    <rect key="frame" x="64" y="156.5" width="286" height="104.5"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="Nfv-r8-JHr">
+                            <rect key="frame" x="0.0" y="0.0" width="178" height="26.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hS-D8-TuV">
+                                    <rect key="frame" x="0.0" y="0.0" width="19.5" height="26.5"/>
+                                    <state key="normal" image="square" catalog="system"/>
+                                    <connections>
+                                        <action selector="toggle:" destination="-1" eventType="touchUpInside" id="2DK-xA-lGk"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Document 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gm1-mP-yzo">
+                                    <rect key="frame" x="63.5" y="0.0" width="114.5" height="26.5"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="oJf-pb-vfY">
+                            <rect key="frame" x="0.0" y="34.5" width="180.5" height="26.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7WA-QE-por">
+                                    <rect key="frame" x="0.0" y="0.0" width="19.5" height="26.5"/>
+                                    <state key="normal" image="square" catalog="system"/>
+                                    <connections>
+                                        <action selector="toggle:" destination="-1" eventType="touchUpInside" id="2Dk-8U-GiA"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Document 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iUZ-Tb-AVU">
+                                    <rect key="frame" x="63.5" y="0.0" width="117" height="26.5"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="1q9-V0-9DZ">
+                            <rect key="frame" x="0.0" y="69" width="181" height="26.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yv2-dt-h1l">
+                                    <rect key="frame" x="0.0" y="0.0" width="19.5" height="26.5"/>
+                                    <state key="normal" image="square" catalog="system"/>
+                                    <connections>
+                                        <action selector="toggle:" destination="-1" eventType="touchUpInside" id="Q4j-Wk-p1X"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Document 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jA9-Vy-xie">
+                                    <rect key="frame" x="63.5" y="0.0" width="117.5" height="26.5"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tvj-b8-JwO">
+                            <rect key="frame" x="0.0" y="103.5" width="286" height="1"/>
+                            <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="WbB-BK-icH"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2M2-Re-85O">
+                    <rect key="frame" x="16" y="277" width="382" height="36"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                    <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <inset key="contentEdgeInsets" minX="30" minY="0.0" maxX="30" maxY="0.0"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="-30" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="-30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Download" image="arrow.down.doc" catalog="system">
+                        <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="vWi-pD-aOd" firstAttribute="centerX" secondItem="lGe-Tr-NVL" secondAttribute="centerX" id="44H-21-FVf"/>
+                <constraint firstItem="HVH-M6-17e" firstAttribute="trailing" secondItem="EV0-E9-j8Z" secondAttribute="trailing" constant="16" id="5UK-Rz-VkC"/>
+                <constraint firstItem="EV0-E9-j8Z" firstAttribute="leading" secondItem="HVH-M6-17e" secondAttribute="leading" constant="16" id="Ih3-Cy-W0y"/>
+                <constraint firstItem="2M2-Re-85O" firstAttribute="leading" secondItem="HVH-M6-17e" secondAttribute="leading" constant="16" id="Lq0-5o-l5s"/>
+                <constraint firstItem="HVH-M6-17e" firstAttribute="trailing" secondItem="2M2-Re-85O" secondAttribute="trailing" constant="16" id="txN-KE-yQE"/>
+                <constraint firstItem="EV0-E9-j8Z" firstAttribute="top" secondItem="HVH-M6-17e" secondAttribute="top" constant="32" id="uEF-g3-27w"/>
+                <constraint firstItem="2M2-Re-85O" firstAttribute="top" secondItem="vWi-pD-aOd" secondAttribute="bottom" constant="16" id="xDB-aR-nBK"/>
+                <constraint firstItem="vWi-pD-aOd" firstAttribute="top" secondItem="EV0-E9-j8Z" secondAttribute="bottom" constant="16" id="znV-m6-vjL"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="HVH-M6-17e"/>
+            <point key="canvasLocation" x="2851" y="669"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow.down.doc" catalog="system" width="115" height="128"/>
+        <image name="square" catalog="system" width="128" height="114"/>
+    </resources>
+</document>

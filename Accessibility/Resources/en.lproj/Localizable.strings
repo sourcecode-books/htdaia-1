@@ -1,0 +1,21 @@
+/* 
+  Localized.strings
+  Accessibility
+
+  Created by Jeroen de Vrind on 09/05/2020.
+  Copyright © 2020 Jeroen de Vrind. All rights reserved.
+*/
+
+"Sections" = "Sections";
+"Titles" = "Titles";
+
+"Favourites" = "Favourites";
+"Add favourite" = "Add favourite";
+"Buy Song One" = "Buy Song One";
+"Buy Song Two" = "Buy Song Two";
+"Green musical note" = "Green musical note";
+"Yellow musical note" = "Yellow musical note";
+
+"Daily Limit" = "Daily Limit";
+
+"Color mode preference" = "Color mode preference";

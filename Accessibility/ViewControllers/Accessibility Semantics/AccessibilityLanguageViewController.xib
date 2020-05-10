@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccessibilityLanguageViewController" customModule="Accessibility" customModuleProvider="target">
+            <connections>
+                <outlet property="dutchButton" destination="qOb-mN-dR3" id="yRs-WI-ZuE"/>
+                <outlet property="explanationLabel" destination="BdT-DZ-UKL" id="Aos-6l-vWI"/>
+                <outlet property="frenchButton" destination="vFC-1b-oVe" id="AIc-ZI-Abb"/>
+                <outlet property="languageLabel" destination="Ibr-VY-aJp" id="zyv-f3-Zab"/>
+                <outlet property="view" destination="qxq-Wc-QXm" id="4zG-Ca-jjE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="qxq-Wc-QXm">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="56" translatesAutoresizingMaskIntoConstraints="NO" id="tBa-e0-4do">
+                    <rect key="frame" x="16" y="76" width="382" height="441"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BdT-DZ-UKL">
+                            <rect key="frame" x="2" y="0.0" width="378.5" height="152.5"/>
+                            <string key="text">We change the app language to German. Elements that doesn't have a language set are spoken in German. Check the tab bar. This text and the buttons have their accessibilityLanguage in English and the label with the sentence changes its accessibilityLanguage depending on the button that is tapped.</string>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dit is een zin in het Nederlands" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ibr-VY-aJp">
+                            <rect key="frame" x="72.5" y="208.5" width="237" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOb-mN-dR3">
+                            <rect key="frame" x="71" y="285" width="240" height="50"/>
+                            <color key="backgroundColor" red="0.040977768599999999" green="0.81198445429999999" blue="0.63646415810000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="QV7-2a-jda"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="pBP-b7-M9y"/>
+                            </constraints>
+                            <state key="normal" title="Change language to Dutch">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="changeToDutch" destination="-1" eventType="touchUpInside" id="QW5-La-Tqo"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFC-1b-oVe">
+                            <rect key="frame" x="71" y="391" width="240" height="50"/>
+                            <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="TGj-qf-1IO"/>
+                                <constraint firstAttribute="height" constant="50" id="wjO-W4-Zz8"/>
+                            </constraints>
+                            <state key="normal" title="Change language to French">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="changeToFrench" destination="-1" eventType="touchUpInside" id="y4o-Ob-yjR"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="tBa-e0-4do" secondAttribute="trailing" constant="16" id="Fb4-Ha-Yna"/>
+                <constraint firstItem="tBa-e0-4do" firstAttribute="top" secondItem="34r-O0-fmi" secondAttribute="top" constant="32" id="he6-Kl-AXH"/>
+                <constraint firstItem="tBa-e0-4do" firstAttribute="leading" secondItem="34r-O0-fmi" secondAttribute="leading" constant="16" id="xzx-c3-NLz"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="34r-O0-fmi"/>
+            <point key="canvasLocation" x="3249" y="946"/>
+        </view>
+    </objects>
+</document>
