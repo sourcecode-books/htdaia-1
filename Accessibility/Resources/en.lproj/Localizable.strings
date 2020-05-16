@@ -9,6 +9,19 @@
 "Sections" = "Sections";
 "Titles" = "Titles";
 
+"No isAccessibilityElement set by default" = "No isAccessibilityElement set by default";
+"A UIImageView is not accessible by default in UIKit:" = "A UIImageView is not accessible by default in UIKit:";
+"Setting isAccessibilityElement to true makes it accessible." = "Setting isAccessibilityElement to true makes it accessible:";
+"Effect on child views of container view" = "Effect on child views of container view";
+"In this container UIView, isAccessibilityElement is false by default. Every element is accessible on its own:" = "In this container UIView, isAccessibilityElement is false by default. Every element is accessible on its own:";
+"Setting isAccessibilityElement to true on a container view, will set it to false on the child views. Later you will set an accessibilityLabel on the container that combines the information of the child views:" = "Setting isAccessibilityElement to true on a container view, will set it to false on the child views. Later you will set an accessibilityLabel on the container that combines the information of the child views:";
+"AccountNumber:" = "AccountNumber:";
+"NL12 ABNA 1234567890" = "NL12 ABNA 1234567890";
+"€250,00" = "€250,00";
+"Custom Views" = "Custom Views";
+"Custom views have isAccessibilityElement set to false by default:" = "Custom views have isAccessibilityElement set to false by default:";
+"TODO" = "TODO";
+
 "Favourites" = "Favourites";
 "Add favourite" = "Add favourite";
 "Buy Song One" = "Buy Song One";
@@ -19,3 +32,16 @@
 "Daily Limit" = "Daily Limit";
 
 "Color mode preference" = "Color mode preference";
+
+"This label is spoken with a high pitch." = "This label is spoken with a high pitch.";
+"This label is spoken with a low pitch." = "This label is spoken with a low pitch.";
+"Swift: if result == 3 { print('Correct') }" = "Swift: if result == 3 { print('Correct') }";
+"+31-6-12345xxx\nNL17ABNA00012345xx" = "+31-6-12345xxx\nNL17ABNA00012345xx";
+"The french man said: 'Bonjour!'" = "The french man said: 'Bonjour!'";
+"The broadcast is live." = "The broadcast is live.";
+
+"Brightness." = "Brightness.";
+"This view is a transient view that doesn't need to be spoken. The aural feedback and button context is enough. But the label of the pop-up view is still accessible." = "This view is a transient view that doesn't need to be spoken. The aural feedback and button context is enough. But the label of the pop-up view is still accessible.";
+"With accessibilityElementsHidden you can hide all the child elements for the assistive technologies. Same as setting isAccessibilityElement to false on each child element." = "With accessibilityElementsHidden you can hide all the child elements for the assistive technologies. Same as setting isAccessibilityElement to false on each child element.";
+"Decrease brightness." = "Decrease brightness.";
+"Increase brightness." = "Increase brightness.";

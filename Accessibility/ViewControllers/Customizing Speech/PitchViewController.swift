@@ -11,23 +11,36 @@ import UIKit
 final class PitchViewController: AccessibilityConfigurableViewController {
 
     // MARK: - Outlets
-    @IBOutlet weak var highPitchLabel: UILabel! {
-        didSet {
-            guard let text = highPitchLabel.text else { return }
-            let attributedString = NSAttributedString(
-                string: text,
-                attributes: [.accessibilitySpeechPitch : 2.0])
-            highPitchLabel.accessibilityAttributedLabel = attributedString
+    @IBOutlet weak var highPitchLabel: UILabel!
+    @IBOutlet weak var lowPitchLabel: UILabel!
+
+    // MARK: - ViewController lifecyle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setLabels()
+        if isAccessibilityFixed {
+            setUpAccessibility()
         }
     }
-    
-    @IBOutlet weak var lowPitchLabel: UILabel! {
-        didSet {
-            guard let text = lowPitchLabel.text else { return }
-            let attributedString = NSAttributedString(
-                string: text,
-                attributes: [.accessibilitySpeechPitch : 0.1])
-            lowPitchLabel.accessibilityAttributedLabel = attributedString
-        }
+
+    private func setLabels() {
+        highPitchLabel.text = Localizable.string(for: LocalizedKey.CustomizingSpeech.highPitch.key)
+        lowPitchLabel.text = Localizable.string(for: LocalizedKey.CustomizingSpeech.lowPitch.key)
+    }
+
+    // MARK: - Accessibility
+    private func setUpAccessibility() {
+        guard
+            let highPitchText = highPitchLabel.text,
+            let lowPitchText = lowPitchLabel.text
+        else { return }
+        let highPitchString = NSAttributedString(
+                string: highPitchText,
+                attributes: [.accessibilitySpeechPitch : 2.0])
+        highPitchLabel.accessibilityAttributedLabel = highPitchString
+        let lowPitchString = NSAttributedString(
+            string: lowPitchText,
+            attributes: [.accessibilitySpeechPitch : 0.1])
+        lowPitchLabel.accessibilityAttributedLabel = lowPitchString
     }
 }

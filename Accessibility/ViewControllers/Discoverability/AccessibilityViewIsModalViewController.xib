@@ -9,16 +9,62 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccessibilityViewIsModalViewController" customModule="Accessibility" customModuleProvider="target">
             <connections>
+                <outlet property="descriptionLabel" destination="fqD-ce-9fV" id="oLS-XP-PUc"/>
+                <outlet property="showModalButton" destination="Rj6-4H-501" id="ixS-WR-9Bc"/>
                 <outlet property="view" destination="iN0-l3-epB" id="1Hj-9I-cJp"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LsS-FG-G8I">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqD-ce-9fV">
+                            <rect key="frame" x="16" y="24" width="382" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rj6-4H-501">
+                            <rect key="frame" x="16" y="716" width="382" height="50"/>
+                            <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="P57-Uu-k9u"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="showModal" destination="-1" eventType="touchUpInside" id="JwX-g3-lKU"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="fqD-ce-9fV" firstAttribute="top" secondItem="LsS-FG-G8I" secondAttribute="top" constant="24" id="Og5-hX-Y8C"/>
+                        <constraint firstAttribute="trailing" secondItem="fqD-ce-9fV" secondAttribute="trailing" constant="16" id="S47-3n-Td7"/>
+                        <constraint firstAttribute="bottomMargin" secondItem="Rj6-4H-501" secondAttribute="bottom" id="akY-40-YVy"/>
+                        <constraint firstAttribute="trailing" secondItem="Rj6-4H-501" secondAttribute="trailing" constant="16" id="axm-zH-hzq"/>
+                        <constraint firstItem="Rj6-4H-501" firstAttribute="top" relation="greaterThanOrEqual" secondItem="fqD-ce-9fV" secondAttribute="bottom" constant="16" id="bMb-pJ-cvb"/>
+                        <constraint firstItem="Rj6-4H-501" firstAttribute="leading" secondItem="LsS-FG-G8I" secondAttribute="leading" constant="16" id="qyd-oj-jAx"/>
+                        <constraint firstItem="fqD-ce-9fV" firstAttribute="leading" secondItem="LsS-FG-G8I" secondAttribute="leading" constant="16" id="uTm-Ea-v46"/>
+                    </constraints>
+                </view>
+            </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="LsS-FG-G8I" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="guh-K7-tNR"/>
+                <constraint firstItem="LsS-FG-G8I" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="hqj-NW-4Ne"/>
+                <constraint firstAttribute="bottom" secondItem="LsS-FG-G8I" secondAttribute="bottom" id="nDC-6e-ReC"/>
+                <constraint firstItem="LsS-FG-G8I" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="tbT-Q2-3so"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <point key="canvasLocation" x="139" y="131"/>
+            <point key="canvasLocation" x="137.68115942028987" y="130.58035714285714"/>
         </view>
     </objects>
 </document>

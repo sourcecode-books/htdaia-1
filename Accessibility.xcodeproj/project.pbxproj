@@ -39,6 +39,10 @@
 		909630AF2465A99D0056333C /* SectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909630AE2465A99D0056333C /* SectionsViewController.swift */; };
 		909630B42465A99E0056333C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 909630B32465A99E0056333C /* Assets.xcassets */; };
 		90E77B082467441700574FD2 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E77B072467441700574FD2 /* Localizable.swift */; };
+		90EEF39D246FD53E000C9724 /* LocalizedKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EEF39C246FD53E000C9724 /* LocalizedKey.swift */; };
+		90EEF39F246FE282000C9724 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EEF39E246FE282000C9724 /* CustomView.swift */; };
+		90EEF3A124701555000C9724 /* ModalSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90EEF3A024701555000C9724 /* ModalSheetViewController.xib */; };
+		90EEF3A324701870000C9724 /* ModalSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EEF3A224701870000C9724 /* ModalSheetViewController.swift */; };
 		90F707BA24683CB0006CDE08 /* CustomElementsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F707B924683CB0006CDE08 /* CustomElementsViewController.xib */; };
 		90F707BC24683CBC006CDE08 /* CustomElementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F707BB24683CBC006CDE08 /* CustomElementsViewController.swift */; };
 		90F707BE24683D06006CDE08 /* PunctuationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F707BD24683D06006CDE08 /* PunctuationViewController.swift */; };
@@ -90,6 +94,9 @@
 		90F7081A2468439D006CDE08 /* DynamicImagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F708192468439D006CDE08 /* DynamicImagesViewController.xib */; };
 		90F7081C246843B2006CDE08 /* LargeContentViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F7081B246843B2006CDE08 /* LargeContentViewerViewController.swift */; };
 		90F7081E24684531006CDE08 /* LargeContentViewerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F7081D24684531006CDE08 /* LargeContentViewerViewController.xib */; };
+		90FA7CFB2470271E00ACB930 /* BottomSheetPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FA7CF82470271D00ACB930 /* BottomSheetPresentationController.swift */; };
+		90FA7CFC2470271E00ACB930 /* BottomSheetTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FA7CF92470271D00ACB930 /* BottomSheetTransitioningDelegate.swift */; };
+		90FA7CFD2470271E00ACB930 /* BottomSheetAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FA7CFA2470271E00ACB930 /* BottomSheetAnimatedTransitioning.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -127,6 +134,10 @@
 		909630B32465A99E0056333C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		909630B82465A99E0056333C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90E77B072467441700574FD2 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		90EEF39C246FD53E000C9724 /* LocalizedKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedKey.swift; sourceTree = "<group>"; };
+		90EEF39E246FE282000C9724 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		90EEF3A024701555000C9724 /* ModalSheetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalSheetViewController.xib; sourceTree = "<group>"; };
+		90EEF3A224701870000C9724 /* ModalSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalSheetViewController.swift; sourceTree = "<group>"; };
 		90F707B924683CB0006CDE08 /* CustomElementsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomElementsViewController.xib; sourceTree = "<group>"; };
 		90F707BB24683CBC006CDE08 /* CustomElementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomElementsViewController.swift; sourceTree = "<group>"; };
 		90F707BD24683D06006CDE08 /* PunctuationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunctuationViewController.swift; sourceTree = "<group>"; };
@@ -178,6 +189,9 @@
 		90F708192468439D006CDE08 /* DynamicImagesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicImagesViewController.xib; sourceTree = "<group>"; };
 		90F7081B246843B2006CDE08 /* LargeContentViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeContentViewerViewController.swift; sourceTree = "<group>"; };
 		90F7081D24684531006CDE08 /* LargeContentViewerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LargeContentViewerViewController.xib; sourceTree = "<group>"; };
+		90FA7CF82470271D00ACB930 /* BottomSheetPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSheetPresentationController.swift; sourceTree = "<group>"; };
+		90FA7CF92470271D00ACB930 /* BottomSheetTransitioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSheetTransitioningDelegate.swift; sourceTree = "<group>"; };
+		90FA7CFA2470271E00ACB930 /* BottomSheetAnimatedTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSheetAnimatedTransitioning.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +211,7 @@
 				904F7E7424675131000811FA /* Identifier.swift */,
 				90042E212465B0EA00EB321F /* Section.swift */,
 				90E77B072467441700574FD2 /* Localizable.swift */,
+				90EEF39C246FD53E000C9724 /* LocalizedKey.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -216,6 +231,7 @@
 				902092692467648000BC4B9D /* IsAccessibilityElementViewController.xib */,
 				90F707BB24683CBC006CDE08 /* CustomElementsViewController.swift */,
 				90F707B924683CB0006CDE08 /* CustomElementsViewController.xib */,
+				90EEF39E246FE282000C9724 /* CustomView.swift */,
 			);
 			path = "Accessibility Element";
 			sourceTree = "<group>";
@@ -261,6 +277,9 @@
 				90F707D324683FB2006CDE08 /* AccessibilityElementsHiddenViewController.xib */,
 				90F707D124683FAA006CDE08 /* AccessibilityViewIsModalViewController.swift */,
 				90F707D524683FBF006CDE08 /* AccessibilityViewIsModalViewController.xib */,
+				90EEF3A224701870000C9724 /* ModalSheetViewController.swift */,
+				90EEF3A024701555000C9724 /* ModalSheetViewController.xib */,
+				90FA7CFE2470272500ACB930 /* Bottom Sheet Animator */,
 			);
 			path = Discoverability;
 			sourceTree = "<group>";
@@ -426,6 +445,16 @@
 			path = "Main Menu";
 			sourceTree = "<group>";
 		};
+		90FA7CFE2470272500ACB930 /* Bottom Sheet Animator */ = {
+			isa = PBXGroup;
+			children = (
+				90FA7CFA2470271E00ACB930 /* BottomSheetAnimatedTransitioning.swift */,
+				90FA7CF82470271D00ACB930 /* BottomSheetPresentationController.swift */,
+				90FA7CF92470271D00ACB930 /* BottomSheetTransitioningDelegate.swift */,
+			);
+			path = "Bottom Sheet Animator";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -517,6 +546,7 @@
 				90F7080224684281006CDE08 /* ScreenChangedViewController.xib in Resources */,
 				90F707D624683FBF006CDE08 /* AccessibilityViewIsModalViewController.xib in Resources */,
 				9020929024682ADF00BC4B9D /* AccessibilityValueViewController.xib in Resources */,
+				90EEF3A124701555000C9724 /* ModalSheetViewController.xib in Resources */,
 				90F707DE246840A3006CDE08 /* GroupViewsViewController.xib in Resources */,
 				90F707CA24683DF0006CDE08 /* LanguageViewController.xib in Resources */,
 				90F707CC24683E04006CDE08 /* PhoneticViewController.xib in Resources */,
@@ -540,6 +570,7 @@
 				9020927D246825CB00BC4B9D /* AccessibilityFrameViewController.swift in Sources */,
 				90F70808246842C3006CDE08 /* PageScrolledViewController.swift in Sources */,
 				904F7E7924675E12000811FA /* BookSections.swift in Sources */,
+				90FA7CFD2470271E00ACB930 /* BottomSheetAnimatedTransitioning.swift in Sources */,
 				9020926E246765F500BC4B9D /* AccessibilityConfigurableViewController.swift in Sources */,
 				90F707D224683FAA006CDE08 /* AccessibilityViewIsModalViewController.swift in Sources */,
 				909630AF2465A99D0056333C /* SectionsViewController.swift in Sources */,
@@ -547,6 +578,8 @@
 				90F707C424683D3B006CDE08 /* PhoneticViewController.swift in Sources */,
 				90F7080C246842EF006CDE08 /* AnnouncementViewController.swift in Sources */,
 				90E77B082467441700574FD2 /* Localizable.swift in Sources */,
+				90EEF39D246FD53E000C9724 /* LocalizedKey.swift in Sources */,
+				90EEF39F246FE282000C9724 /* CustomView.swift in Sources */,
 				9020927F246825CB00BC4B9D /* AccessibilityFrameScrollViewViewController.swift in Sources */,
 				90209287246825D700BC4B9D /* AccessibilityValueViewController.swift in Sources */,
 				90209288246825D700BC4B9D /* AccessibilityTraitsViewController.swift in Sources */,
@@ -563,9 +596,12 @@
 				9020927E246825CB00BC4B9D /* AccessibilityActivationPointViewController.swift in Sources */,
 				909630AB2465A99D0056333C /* AppDelegate.swift in Sources */,
 				90F707D024683F6F006CDE08 /* AccessibilityElementsHiddenViewController.swift in Sources */,
+				90EEF3A324701870000C9724 /* ModalSheetViewController.swift in Sources */,
 				90F7080024684269006CDE08 /* ScreenChangedViewController.swift in Sources */,
 				90F707D824684023006CDE08 /* AccessibilityElementsViewController.swift in Sources */,
 				90F7081024684324006CDE08 /* AnnouncementDidFinishViewController.swift in Sources */,
+				90FA7CFC2470271E00ACB930 /* BottomSheetTransitioningDelegate.swift in Sources */,
+				90FA7CFB2470271E00ACB930 /* BottomSheetPresentationController.swift in Sources */,
 				9020926A2467648000BC4B9D /* IsAccessibilityElementViewController.swift in Sources */,
 				909630AD2465A99D0056333C /* SceneDelegate.swift in Sources */,
 				904F7E7524675131000811FA /* Identifier.swift in Sources */,
