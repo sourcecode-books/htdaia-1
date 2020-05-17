@@ -43,6 +43,13 @@ enum LocalizedKey {
         case accessibilityElementHiddenDescriptionFixed = "With accessibilityElementsHidden you can hide all the child elements for the assistive technologies. Same as setting isAccessibilityElement to false on each child element."
         case decreaseBrightness = "Decrease brightness."
         case increaseBrightness = "Increase brightness."
+        case accessibilityViewIsModalBroken = "This text should not be accessible once you open the pop-up view. However with custom views, the content beneath will still be accessible. This confuses the VoiceOver user because the context is not clear."
+        case accessibilityViewIsModalFixed = "With accessibilityViewIsModal you make elements of sibling views inaccessible. The focus stays on the pop-up view and VoiceOver users can not reach the content below the pop-up view."
+        case showModalButtonTitle = "Show Modal"
+        case popUpTitle = "You Are On Fire!"
+        case popUpDescription = "The assistive technology should focus on this bottom sheet to provide the right context."
+        case closeButtonTitle = "Close"
+
         var key: String { return self.rawValue }
     }
 }

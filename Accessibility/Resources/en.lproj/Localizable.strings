@@ -45,3 +45,9 @@
 "With accessibilityElementsHidden you can hide all the child elements for the assistive technologies. Same as setting isAccessibilityElement to false on each child element." = "With accessibilityElementsHidden you can hide all the child elements for the assistive technologies. Same as setting isAccessibilityElement to false on each child element.";
 "Decrease brightness." = "Decrease brightness.";
 "Increase brightness." = "Increase brightness.";
+
+"The text that is now in this view, should not be accessible once you open the modal screen. However with custom views, the content beneath will still be accessible. This confuses the VoiceOver user because the context is not clear." = "The text that is now in this view, should not be accessible once you open the modal screen. However with custom views, the content beneath will still be accessible. This confuses the VoiceOver user because the context is not clear.";
+"Show Modal" = "Show Modal";
+"You Are On Fire!" = "You Are On Fire!";
+"The assistive technology should focus on this bottom sheet to provide the right context. Instead everything behind the sheet is still accessible." = "The assistive technology should focus on this bottom sheet to provide the right context. Instead everything behind the sheet is still accessible.";
+"Close" =  "Close";

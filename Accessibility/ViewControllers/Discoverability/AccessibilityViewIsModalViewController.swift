@@ -13,6 +13,12 @@ final class AccessibilityViewIsModalViewController: AccessibilityConfigurableVie
     // MARK: - IBOutlets
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var showModalButton: UIButton!
+    @IBOutlet weak var dimmedBackgroundView: UIView!
+    @IBOutlet weak var popUpView: UIView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descriptionPopUpLabel: UILabel!
+    @IBOutlet weak var closeButton: UIButton!
+
 
     private lazy var bottomSheetTransitioningDelegate: UIViewControllerTransitioningDelegate = {
         return BottomSheetTransitioningDelegate()
@@ -22,24 +28,43 @@ final class AccessibilityViewIsModalViewController: AccessibilityConfigurableVie
     override func viewDidLoad() {
         super.viewDidLoad()
         setLabels()
+        if isAccessibilityFixed {
+            setUpAccessibility()
+        }
+        closeButton.addTarget(self, action: #selector(close), for: .touchUpInside)
+        dimmedBackgroundView.alpha = 0
+        popUpView.alpha = 0
+        popUpView.layer.cornerRadius = 5.0
     }
 
     private func setLabels() {
-        descriptionLabel.text = "The text that is now in this view, should not be accessible once you open the modal screen. However with custom views, the content beneath will still be accessible. This confuses the VoiceOver user because the context is not clear."
-        showModalButton.setTitle("Show Modal", for: .normal)
+        descriptionLabel.text = Localizable.string(for: LocalizedKey.Discoverability..key)
+        showModalButton.setTitle(Localizable.string(for: LocalizedKey.Discoverability.showModalButtonTitle.key), for: .normal)
+            titleLabel.text = Localizable.string(for: LocalizedKey.Discoverability.popUpTitle.key)
+        descriptionPopUpLabel.text = Localizable.string(for: LocalizedKey.Discoverability.popUpDescription.key)
+        closeButton.setTitle(Localizable.string(for: LocalizedKey.Discoverability.closeButtonTitle.key), for: .normal)
+    }
+
+    private func animatePopUpView(isVisible: Bool) {
+        UIView.animate(withDuration: 0.2) {
+            self.dimmedBackgroundView.alpha = isVisible ? 1.0 : 0.0
+            self.popUpView.alpha = isVisible ? 1.0 : 0.0
+        }
+    }
+
+    // MARK: - Accessibility
+    private func setUpAccessibility() {
+        if isAccessibilityFixed {
+            popUpView.accessibilityViewIsModal = true
+        }
     }
 
     // MARK: - User actions
     @IBAction func showModal() {
-        let viewController = ModalSheetViewController()
-        viewController.modalPresentationStyle = .custom
-        viewController.transitioningDelegate = bottomSheetTransitioningDelegate
+        animatePopUpView(isVisible: true)
+    }
 
-        // MARK: - Accessibility
-        if isAccessibilityFixed {
-            viewController.accessibilityViewIsModal = true
-        }
-
-        present(viewController, animated: true)
+    @objc private func close() {
+        animatePopUpView(isVisible: false)
     }
 }
