@@ -91,3 +91,9 @@
 "The download button now has an accessibility hint that starts with a verb and tells the outcome of performing the action." = "The download button now has an accessibility hint that starts with a verb and tells the outcome of performing the action.";
 "Select document" = "Select document";
 "Downloads the selected documents." = "Downloads the selected documents.";
+
+"Name:" = "Name:";
+"Email:" = "Email:";
+"Jeroen de Vrind" = "Jeroen de Vrind";
+"email@me.com" = "email@me.com";
+

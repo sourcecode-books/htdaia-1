@@ -98,4 +98,13 @@ enum LocalizedKey {
 
         var key: String { return self.rawValue }
     }
+
+    enum GroupingAndOrder: String {
+        case name = "Name:"
+        case email = "Email:"
+        case person = "Jeroen de Vrind"
+        case emailPerson = "email@me.com"
+
+        var key: String { return self.rawValue }
+    }
 }

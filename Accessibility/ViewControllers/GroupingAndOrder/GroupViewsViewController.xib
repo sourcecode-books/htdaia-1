@@ -9,6 +9,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GroupViewsViewController" customModule="Accessibility" customModuleProvider="target">
             <connections>
+                <outlet property="emailContainerView" destination="Jai-yE-9cR" id="t0b-1z-cAg"/>
+                <outlet property="emailLabel" destination="E2o-Fs-bge" id="XKX-sN-WLe"/>
+                <outlet property="emailTitleLabel" destination="kYU-gn-BYs" id="pTJ-Jm-6qP"/>
+                <outlet property="nameContainerView" destination="BzP-5i-MAd" id="GmZ-Te-Rdv"/>
+                <outlet property="nameLabel" destination="23u-GF-mxJ" id="1oK-V1-x3k"/>
+                <outlet property="nameTitleLabel" destination="iLx-3x-Wfh" id="xTk-wv-2Ck"/>
                 <outlet property="view" destination="iN0-l3-epB" id="bhe-bY-9rA"/>
             </connections>
         </placeholder>
@@ -16,7 +22,53 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="KYl-du-LxI">
+                    <rect key="frame" x="16" y="76" width="382" height="57"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="BzP-5i-MAd">
+                            <rect key="frame" x="0.0" y="0.0" width="183" height="57"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iLx-3x-Wfh">
+                                    <rect key="frame" x="0.0" y="0.0" width="183" height="20.5"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jeroen de Vrind" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23u-GF-mxJ">
+                                    <rect key="frame" x="0.0" y="36.5" width="183" height="20.5"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Jai-yE-9cR">
+                            <rect key="frame" x="199" y="0.0" width="183" height="57"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kYU-gn-BYs">
+                                    <rect key="frame" x="0.0" y="0.0" width="183" height="20.5"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email@me.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2o-Fs-bge">
+                                    <rect key="frame" x="0.0" y="36.5" width="183" height="20.5"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="KYl-du-LxI" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="32" id="1d9-YN-9lM"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="KYl-du-LxI" secondAttribute="trailing" constant="16" id="cdk-2e-1BK"/>
+                <constraint firstItem="KYl-du-LxI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="kYK-Wc-eki"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="139" y="131"/>
         </view>
