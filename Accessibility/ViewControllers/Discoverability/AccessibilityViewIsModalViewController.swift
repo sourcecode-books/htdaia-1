@@ -19,11 +19,6 @@ final class AccessibilityViewIsModalViewController: AccessibilityConfigurableVie
     @IBOutlet weak var descriptionPopUpLabel: UILabel!
     @IBOutlet weak var closeButton: UIButton!
 
-
-    private lazy var bottomSheetTransitioningDelegate: UIViewControllerTransitioningDelegate = {
-        return BottomSheetTransitioningDelegate()
-    }()
-
     // MARK: - ViewController lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +33,8 @@ final class AccessibilityViewIsModalViewController: AccessibilityConfigurableVie
     }
 
     private func setLabels() {
-        descriptionLabel.text = Localizable.string(for: LocalizedKey.Discoverability..key)
+        let key = isAccessibilityFixed ? LocalizedKey.Discoverability.accessibilityViewIsModalFixed.key : LocalizedKey.Discoverability.accessibilityViewIsModalBroken.key
+        descriptionLabel.text = Localizable.string(for: key)
         showModalButton.setTitle(Localizable.string(for: LocalizedKey.Discoverability.showModalButtonTitle.key), for: .normal)
             titleLabel.text = Localizable.string(for: LocalizedKey.Discoverability.popUpTitle.key)
         descriptionPopUpLabel.text = Localizable.string(for: LocalizedKey.Discoverability.popUpDescription.key)

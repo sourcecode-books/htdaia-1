@@ -51,3 +51,5 @@
 "You Are On Fire!" = "You Are On Fire!";
 "The assistive technology should focus on this bottom sheet to provide the right context. Instead everything behind the sheet is still accessible." = "The assistive technology should focus on this bottom sheet to provide the right context. Instead everything behind the sheet is still accessible.";
 "Close" =  "Close";
+"With accessibilityViewIsModal you make elements of sibling views inaccessible. The focus stays on the pop-up view and VoiceOver users can not reach the content below the pop-up view." = "With accessibilityViewIsModal you make elements of sibling views inaccessible. The focus stays on the pop-up view and VoiceOver users can not reach the content below the pop-up view.";
+"This text should not be accessible once you open the pop-up view. However with custom views, the content beneath will still be accessible. This confuses the VoiceOver user because the context is not clear." = "This text should not be accessible once you open the pop-up view. However with custom views, the content beneath will still be accessible. This confuses the VoiceOver user because the context is not clear.";
