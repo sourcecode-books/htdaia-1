@@ -24,7 +24,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dla-bb-EdE">
+                <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dla-bb-EdE">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
@@ -64,10 +64,10 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kLQ-PL-dga" userLabel="Pop-Up view">
-                    <rect key="frame" x="16" y="274" width="382" height="260"/>
+                    <rect key="frame" x="16" y="254" width="382" height="300"/>
                     <subviews>
                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OvI-JT-8dN">
-                            <rect key="frame" x="0.0" y="0.0" width="382" height="260"/>
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="300"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hnd-Jo-FsW">
                                     <rect key="frame" x="0.0" y="0.0" width="382" height="262"/>
@@ -137,7 +137,7 @@
                     <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstItem="OvI-JT-8dN" firstAttribute="top" secondItem="kLQ-PL-dga" secondAttribute="top" id="8Ih-Gb-XyW"/>
-                        <constraint firstAttribute="height" constant="260" id="NQx-71-TNg"/>
+                        <constraint firstAttribute="height" constant="300" id="NQx-71-TNg"/>
                         <constraint firstItem="OvI-JT-8dN" firstAttribute="leading" secondItem="kLQ-PL-dga" secondAttribute="leading" id="l8x-Ng-Vtt"/>
                         <constraint firstAttribute="bottom" secondItem="OvI-JT-8dN" secondAttribute="bottom" id="ucD-LL-hh6"/>
                         <constraint firstAttribute="trailing" secondItem="OvI-JT-8dN" secondAttribute="trailing" id="zWN-en-BpD"/>
