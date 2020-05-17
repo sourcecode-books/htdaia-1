@@ -26,6 +26,37 @@ enum LocalizedKey {
         var key: String { return self.rawValue }
     }
 
+    enum AccessibilitySemantics: String {
+        case toolBarButtonDescriptionBroken = "The toolbar button in the navigationBar speaks the name of the image or VoiceOver tries to guess what it means."
+        case toolBarButtonDescriptionFixed = "Now the toolbar button has an accessibility label and is clearly spoken as 'Add favourite'."
+        case imagesAndButtonsDescriptionBroken = "Images are not spoken by default. The image name is spoken or VoiceOver tries to guess. Also the buttons are not uniquely identifiable."
+        case imagesAndButtonsDescriptionFixed = "Both images are now accessible and have an accessibility label that describes what's in the image. The buy buttons have accessibility labels that make them uniquely identifiable."
+        case songOneTitle = "Song One"
+        case songTwoTitle = "Song Two"
+        case buyButtonTitle = "Buy"
+        case timeAndDateDescriptionBroken = "Time is read as numbers."
+        case timeAndDateDescriptionFixed = "Time is read correctly."
+        case currencyDescriptionBroken = "Currency is not spoken correctly."
+        case currencyDescriptionFixed = "Currency is read correctly."
+        case addFavouriteAccessibilityLabel = "Add favourite"
+        case buySongOneAccessibilityLabel = "Buy Song One"
+        case buySongTwoAccessibilityLabel = "Buy Song Two"
+        case greenMusicalNote = "Green musical note"
+        case yellowMusicalNote = "Yellow musical note"
+        case time = "Time"
+        case date = "Date"
+        case currency = "Currency"
+
+        case hintDescriptionBroken = "It is not clear for the user what exactly happens if the download button is pressed. Also, the buttons are not described well."
+        case hintDescriptionFixed = "The download button now has an accessibility hint that starts with a verb and tells the outcome of performing the action."
+        case selectDocument = "Select document"
+        case downloadButtonHint = "Downloads the selected documents."
+
+        case dailyLimit = "Daily Limit"
+
+        var key: String { return self.rawValue }
+    }
+
     enum CustomizingSpeech: String {
         case highPitch = "This label is spoken with a high pitch."
         case lowPitch = "This label is spoken with a low pitch."
@@ -49,6 +80,21 @@ enum LocalizedKey {
         case popUpTitle = "You Are On Fire!"
         case popUpDescription = "The assistive technology should focus on this bottom sheet to provide the right context."
         case closeButtonTitle = "Close"
+
+        var key: String { return self.rawValue }
+    }
+
+    enum FocusArea: String {
+        case focusAreaTitle = "Focus Area"
+        case accessibilityFrameDescription = "The accessibility frame and path need to be set to the view's frame in on-screen coordinates."
+        case accessibilityFrameButtonTitle = "Focus on me with VoiceOver on"
+        case scrollViewTitle = "Scroll View"
+        case scrollViewLabelTop = "Pay special attention to scroll views where it might seem to work at first, but as soon as you scroll, the highlight does not follow the element."
+        case scrollViewLabelBottom = "You can fix this by updating the accessibilityPath in the delegate function of the UIScrollView: scrollViewDidScroll(_ scrollView: UIScrollView)./n/nIn general you need to update the accessibilityFrame or accessibilityPath if the view’s frame changes after the view is initialized. You can also override the accessibilityPath of an element that inherits from a UIView./n/n An accessibility element needs an accessibilityPath to become focusable by assistive technologies like VoiceOver."
+        case scrollViewButtonTitle = "Scroll and check my focus"
+        case colorModePreference = "Color mode preference"
+        case accessibilityActivationPointBroken = "The label is separate from the paint button. To make it one clickable element you can put both the label and button in a container and make it accessible. But the activation point will be on the center of the container by default."
+        case accessibilityActivationPointFixed
 
         var key: String { return self.rawValue }
     }

@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccessibilityHintViewController" customModule="Accessibility" customModuleProvider="target">
             <connections>
+                <outlet property="descriptionLabel" destination="EV0-E9-j8Z" id="Q2c-gW-NSz"/>
                 <outlet property="downloadButton" destination="2M2-Re-85O" id="uJt-5T-H2y"/>
                 <outlet property="view" destination="lGe-Tr-NVL" id="hGX-bK-LB4"/>
                 <outletCollection property="checkboxButtons" destination="6hS-D8-TuV" collectionClass="NSMutableArray" id="Uiq-DG-y56"/>

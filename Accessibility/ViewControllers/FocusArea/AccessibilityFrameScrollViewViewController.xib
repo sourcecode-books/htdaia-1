@@ -10,6 +10,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccessibilityFrameScrollViewViewController" customModule="Accessibility" customModuleProvider="target">
             <connections>
                 <outlet property="scrollViewButton" destination="Ljb-7C-Qhd" id="qaX-zu-Tsj"/>
+                <outlet property="scrollViewLabelBottom" destination="yP6-8P-Yq5" id="Ce4-7M-6kf"/>
+                <outlet property="scrollViewLabelTop" destination="Zjd-Aq-0WN" id="LYY-RW-UA0"/>
+                <outlet property="scrollViewTitle" destination="IR6-3E-Kkr" id="olV-K3-Iqn"/>
                 <outlet property="view" destination="kxr-i1-2G5" id="tNf-14-9RW"/>
             </connections>
         </placeholder>
@@ -53,10 +56,10 @@
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yP6-8P-Yq5">
                                             <rect key="frame" x="0.0" y="251.5" width="350" height="815.5"/>
-                                            <string key="text">You can fix this by updating the accessibilityPath in the delegate function of the UIScrollView: scrollViewDidScroll(_ scrollView: UIScrollView). 
+                                            <mutableString key="text">You can fix this by updating the accessibilityPath in the delegate function of the UIScrollView: scrollViewDidScroll(_ scrollView: UIScrollView). 
 
 In general you need to update the accessibilityFrame or accessibilityPath if the view’s frame changes after the view is initialized. You can also override the accessibilityPath of an element that inherits from a UIView.  An accessibility element needs an accessibilityPath to become focusable by assistive technologies like VoiceOver. 
-</string>
+</mutableString>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>

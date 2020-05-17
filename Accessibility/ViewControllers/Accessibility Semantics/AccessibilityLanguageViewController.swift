@@ -20,6 +20,21 @@ final class AccessibilityLanguageViewController: AccessibilityConfigurableViewCo
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if isAccessibilityFixed {
+            setUpAccessibility()
+        }
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+
+        // Change back to English when leaving the screen
+        if isAccessibilityFixed {
+            UIApplication.shared.accessibilityLanguage = "en-EN"
+        }
+    }
+
+    private func setUpAccessibility() {
         // Sets the whole app to German language
         UIApplication.shared.accessibilityLanguage = "de-DE"
 
@@ -30,21 +45,18 @@ final class AccessibilityLanguageViewController: AccessibilityConfigurableViewCo
         frenchButton.accessibilityLanguage = "en-EN"
     }
 
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        // Change back to English when leaving the screen
-        UIApplication.shared.accessibilityLanguage = "en-EN"
-    }
-
     // MARK: - User actions
     @IBAction func changeToDutch() {
         languageLabel.text = "Dit is een zin in het Nederlands"
-        languageLabel.accessibilityLanguage = "nl-NL"
+        if isAccessibilityFixed {
+            languageLabel.accessibilityLanguage = "nl-NL"
+        }
     }
 
     @IBAction func changeToFrench() {
         languageLabel.text = "C’est une phrase en français"
-        languageLabel.accessibilityLanguage = "fr-FR"
+        if isAccessibilityFixed {
+            languageLabel.accessibilityLanguage = "fr-FR"
+        }
     }
-
 }

@@ -11,13 +11,28 @@ import UIKit
 final class AccessibilityFrameViewController: AccessibilityConfigurableViewController {
 
     // MARK: - Outlets
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var button: UIButton!
 
     // MARK: - Viewcontroller lifecycle
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        setUpLabels()
+        button.accessibilityPath = UIBezierPath(rect: button.frame)
+        if isAccessibilityFixed {
+            setUpAccessibility()
+        }
+    }
 
-        // The fix is to use on-screen coordinates via one of the convert methods.
+    private func setUpLabels() {
+        titleLabel.text = Localizable.string(for: LocalizedKey.FocusArea.focusAreaTitle.key)
+        descriptionLabel.text = Localizable.string(for: LocalizedKey.FocusArea.accessibilityFrameDescription.key)
+        button.setTitle(Localizable.string(for: LocalizedKey.FocusArea.accessibilityFrameButtonTitle.key), for: .normal)
+    }
+
+    // MARK: - Accessibility
+    private func setUpAccessibility() {
         button.accessibilityPath = UIBezierPath(rect: view.convert(button.frame, from: button.superview!))
     }
 }

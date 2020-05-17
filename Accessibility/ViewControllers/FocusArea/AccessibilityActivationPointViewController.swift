@@ -16,38 +16,48 @@ enum ColorMode {
 final class AccessibilityActivationPointViewController: AccessibilityConfigurableViewController {
 
     // MARK: - Outlets
-    @IBOutlet weak var button: UIButton! {
-        didSet {
-            button.addTarget(self, action: #selector(toggleDarkMode), for: .touchUpInside)
-        }
-    }
+    @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var buttonLabel: UILabel!
     @IBOutlet weak var containerView: UIStackView!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var moreInfoLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+
 
     // MARK: - Properties
     var colorMode: ColorMode = .light
 
     // MARK: - Viewcontroller lifecycle
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        setUpAccessibility()
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        button.addTarget(self, action: #selector(toggleDarkMode), for: .touchUpInside)
+        setUpLabels()
     }
 
-    private func setUpAccessibility() {
-        containerView.isAccessibilityElement = true
-        containerView.accessibilityTraits = [.button]
-        containerView.accessibilityLabel = Localizable.string(for: "Color mode preference")
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if isAccessibilityFixed {
+            setUpAccessibility()
+        }
+    }
 
-        // The fix is to set the activation-point
+    private func setUpLabels() {
+        let key = isAccessibilityFixed ? LocalizedKey.FocusArea.accessibilityActivationPointFixed.key : LocalizedKey.FocusArea.accessibilityActivationPointBroken.key
+        descriptionLabel.text = Localizable.string(for: key)
+    }
+
+    // MARK: - Accessibility
+    private func setUpAccessibility() {
+        containerView.accessibilityLabel = Localizable.string(for: LocalizedKey.FocusArea.colorModePreference.key)
+        containerView.isAccessibilityElement = true
+        containerView.accessibilityTraits = button.accessibilityTraits
         containerView.accessibilityActivationPoint = containerView.convert(button.center, to: view)
     }
 
+    // MARK: - User actions
     @objc private func toggleDarkMode() {
         let darkMode = colorMode == .dark
         colorMode = darkMode ? .light : .dark
         view.backgroundColor = darkMode ? .black : .white
-        titleLabel.textColor = darkMode ? .white : .black
-        moreInfoLabel.textColor = darkMode ? .white : .black
+        buttonLabel.textColor = darkMode ? .white : .black
+        descriptionLabel.textColor = darkMode ? .white : .black
     }
 }

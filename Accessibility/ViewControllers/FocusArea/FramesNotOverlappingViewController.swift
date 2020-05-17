@@ -9,4 +9,14 @@
 import UIKit
 
 final class FramesNotOverlappingViewController: AccessibilityConfigurableViewController {
+
+    // MARK: - IBOutlets
+
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var nextButton: UIButton!
+
+    // MARK: - ViewController lifecycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
 }

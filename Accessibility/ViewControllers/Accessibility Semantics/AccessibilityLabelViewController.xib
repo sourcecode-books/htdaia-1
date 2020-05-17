@@ -9,13 +9,22 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccessibilityLabelViewController" customModule="Accessibility" customModuleProvider="target">
             <connections>
+                <outlet property="barButtonDescriptionLabel" destination="dKX-V8-eS9" id="T2s-5T-ydb"/>
                 <outlet property="buySongOneButton" destination="bwb-E3-7lN" id="fOQ-FX-yiC"/>
                 <outlet property="buySongTwoButton" destination="eV3-md-sdT" id="dUZ-ok-wAz"/>
+                <outlet property="currencyDescriptionLabel" destination="OOm-6V-crg" id="bFw-c4-Baa"/>
                 <outlet property="currencyLabel" destination="r1w-dX-A46" id="V9P-Hc-zMl"/>
+                <outlet property="currencyTitleLabel" destination="CJL-II-fLp" id="VLg-RY-Xd9"/>
                 <outlet property="dateLabel" destination="23v-Bv-cfi" id="KIe-cn-aFa"/>
+                <outlet property="dateTitleLabel" destination="mSU-vg-W16" id="CYA-6G-Sz7"/>
                 <outlet property="songOneImageView" destination="B9s-2B-dgY" id="3Zs-Hd-6Ne"/>
+                <outlet property="songOneLabel" destination="Cks-Mr-W2X" id="MAi-qH-hD8"/>
                 <outlet property="songTwoImageView" destination="V9n-BC-0px" id="hMN-4m-reO"/>
+                <outlet property="songTwoLabel" destination="Sla-v3-Cj7" id="xXm-9N-X50"/>
+                <outlet property="songsDescriptionLabel" destination="Q6L-vp-rD1" id="rZU-rW-5vY"/>
+                <outlet property="timeAndDateDescriptionLabel" destination="jiX-fm-xEa" id="ji1-BT-FSc"/>
                 <outlet property="timeLabel" destination="L0l-3D-E9R" id="TFU-uS-daY"/>
+                <outlet property="timeTitleLabel" destination="qbf-jT-9db" id="rdK-qA-rsj"/>
                 <outlet property="view" destination="3BU-9R-dma" id="FjJ-86-LnQ"/>
             </connections>
         </placeholder>

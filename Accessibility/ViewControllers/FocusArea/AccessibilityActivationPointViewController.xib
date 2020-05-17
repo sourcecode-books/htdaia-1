@@ -10,9 +10,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccessibilityActivationPointViewController" customModule="Accessibility" customModuleProvider="target">
             <connections>
                 <outlet property="button" destination="iN5-bZ-be7" id="Wvj-Ig-A3V"/>
+                <outlet property="buttonLabel" destination="VmK-q5-bgr" id="Ja3-bD-Skn"/>
                 <outlet property="containerView" destination="AaS-xi-qgs" id="0yz-Rm-IZf"/>
-                <outlet property="moreInfoLabel" destination="VmK-q5-bgr" id="zH2-rC-jbJ"/>
-                <outlet property="titleLabel" destination="6fl-bo-ZKB" id="Bh1-SG-wnZ"/>
+                <outlet property="descriptionLabel" destination="zkK-N4-Sle" id="VCE-MQ-wHd"/>
                 <outlet property="view" destination="wB9-gW-JDh" id="5dd-6N-0UW"/>
             </connections>
         </placeholder>
@@ -22,23 +22,16 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="S8Z-5c-QZ5">
-                    <rect key="frame" x="16" y="76" width="382" height="173.5"/>
+                    <rect key="frame" x="16" y="76" width="382" height="62"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activation Point Broken" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fl-bo-ZKB">
-                            <rect key="frame" x="0.0" y="0.0" width="382" height="26.5"/>
-                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkK-N4-Sle">
-                            <rect key="frame" x="0.0" y="50.5" width="382" height="61"/>
-                            <string key="text">Now the activation point is set to the center of the paint button in on-screen coordinates. Double-tap will now activate the paint button action.</string>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkK-N4-Sle">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="0.0"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="AaS-xi-qgs">
-                            <rect key="frame" x="0.0" y="135.5" width="382" height="38"/>
+                            <rect key="frame" x="0.0" y="24" width="382" height="38"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color mode preference" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VmK-q5-bgr">
                                     <rect key="frame" x="0.0" y="0.0" width="275" height="38"/>

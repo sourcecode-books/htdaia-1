@@ -11,16 +11,20 @@ import UIKit
 final class AccessibleSlider: UISlider {
     private var stepSize: Float = 250
     private var numberFormatter: NumberFormatter?
+    private var isFixed: Bool = false
 
-    func configure(title: String, minimumValue: Float, maximumValue: Float, stepSize: Float, initialValue: Float, numberFormatter: NumberFormatter) {
+    func configure(title: String, minimumValue: Float, maximumValue: Float, stepSize: Float, initialValue: Float, numberFormatter: NumberFormatter, isFixed: Bool) {
         self.stepSize = stepSize
         self.numberFormatter = numberFormatter
         self.isContinuous = true
         self.minimumValue = minimumValue
         self.maximumValue = maximumValue
-        accessibilityLabel = title
-        accessibilityValue = readableValue()
+        self.isFixed = isFixed
         value = initialValue
+        if isFixed {
+            accessibilityLabel = title
+            accessibilityValue = readableValue()
+        }
     }
 
     func readableValue() -> String {
@@ -33,13 +37,17 @@ final class AccessibleSlider: UISlider {
 
     override func accessibilityIncrement() {
         value += stepSize
-        accessibilityValue = readableValue()
+        if isFixed {
+            accessibilityValue = readableValue()
+        }
         sendActions(for: .valueChanged)
     }
 
     override func accessibilityDecrement() {
         value -= stepSize
-        accessibilityValue = readableValue()
+        if isFixed {
+            accessibilityValue = readableValue()
+        }
         sendActions(for: .valueChanged)
     }
 }
@@ -54,28 +62,27 @@ final class AccessibilityValueViewController: AccessibilityConfigurableViewContr
     // MAR: - ViewController lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        if isAccessibilityFixed {
-            configureAccessibleSlider()
-        }
+        titleLabel.text = Localizable.string(for: LocalizedKey.AccessibilitySemantics.dailyLimit.key)
+        dailyLimitLabel.text = slider?.readableValue()
+        configureAccessibleSlider()
     }
 
     private func configureAccessibleSlider() {
         let numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = .currency
         numberFormatter.usesGroupingSeparator = false
-        slider.configure(title: Localizable.string(for: "Daily Limit"),
+        slider.configure(title: Localizable.string(for: LocalizedKey.AccessibilitySemantics.dailyLimit.key),
                          minimumValue: 500.0,
                          maximumValue: 5000.0,
                          stepSize: 500.0,
                          initialValue: 2500.0,
-                         numberFormatter: numberFormatter)
-
-        titleLabel.text = Localizable.string(for: "Daily Limit")
-        titleLabel.isAccessibilityElement = false
-
+                         numberFormatter: numberFormatter,
+                         isFixed: isAccessibilityFixed)
         dailyLimitLabel.text = slider?.readableValue()
-        dailyLimitLabel.isAccessibilityElement = false
+        if isAccessibilityFixed {
+            titleLabel.isAccessibilityElement = false
+            dailyLimitLabel.isAccessibilityElement = false
+        }
     }
 
     // MARK: - User actions

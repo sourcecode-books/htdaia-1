@@ -11,6 +11,15 @@ import UIKit
 final class AccessibilityLabelViewController: AccessibilityConfigurableViewController {
 
     // MARK: - Outlets
+    @IBOutlet weak var barButtonDescriptionLabel: UILabel!
+    @IBOutlet weak var songsDescriptionLabel: UILabel!
+    @IBOutlet weak var songOneLabel: UILabel!
+    @IBOutlet weak var songTwoLabel: UILabel!
+    @IBOutlet weak var timeAndDateDescriptionLabel: UILabel!
+    @IBOutlet weak var timeTitleLabel: UILabel!
+    @IBOutlet weak var dateTitleLabel: UILabel!
+    @IBOutlet weak var currencyDescriptionLabel: UILabel!
+    @IBOutlet weak var currencyTitleLabel: UILabel!
     @IBOutlet weak var buySongOneButton: UIButton!
     @IBOutlet weak var buySongTwoButton: UIButton!
     @IBOutlet weak var songOneImageView: UIImageView!
@@ -19,42 +28,66 @@ final class AccessibilityLabelViewController: AccessibilityConfigurableViewContr
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var currencyLabel: UILabel!
 
+    var addButton: UIBarButtonItem? {
+        get { return tabBarController?.navigationItem.rightBarButtonItem }
+        set { tabBarController?.navigationItem.rightBarButtonItem = newValue }
+    }
+
     // MARK: - Viewcontroller lifecycle
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         setUpNavigationBar()
-        setUpAccessibility()
+        setUpLabels()
+        if isAccessibilityFixed {
+            setUpAccessibility()
+        }
         dateLabel.text = getDateString(for: Date())
     }
 
     private func setUpNavigationBar() {
-        tabBarController?.title = Localizable.string(for: "Favourites")
-        let image = UIImage(named: "core_icon_add")
-
-        // Fix the navigationBar button by providing  label or use the system Add-button
-        // UIBarButtonItem(barButtonSystemItem: .add, target: self, action: nil)
-        let addButton = UIBarButtonItem(image: image, style: .plain, target: self, action: nil)
-        addButton.accessibilityLabel = Localizable.string(for: "Add favourite")
-        tabBarController?.navigationItem.rightBarButtonItem = addButton
+        addButton = UIBarButtonItem(image: UIImage(systemName: "plus"), style: .plain, target: self, action: nil)
+        addButton?.accessibilityLabel = nil // to set back to default
     }
 
-    private func setUpAccessibility() {
-        // Fix to identify which buy button the user is focusing on
-        buySongOneButton.accessibilityLabel = Localizable.string(for: "Buy Song One")
-        buySongTwoButton.accessibilityLabel = Localizable.string(for: "Buy Song Two")
+    private func setUpLabels() {
+        buySongOneButton.setTitle(Localizable.string(for: LocalizedKey.AccessibilitySemantics.buyButtonTitle.key), for: .normal)
+        buySongTwoButton.setTitle(Localizable.string(for: LocalizedKey.AccessibilitySemantics.buyButtonTitle.key), for: .normal)
+        songOneLabel.text = Localizable.string(for: LocalizedKey.AccessibilitySemantics.songOneTitle.key)
+        songTwoLabel.text = Localizable.string(for: LocalizedKey.AccessibilitySemantics.songTwoTitle.key)
+        timeTitleLabel.text = Localizable.string(for: LocalizedKey.AccessibilitySemantics.time.key)
+        dateTitleLabel.text = Localizable.string(for: LocalizedKey.AccessibilitySemantics.date.key)
+        currencyTitleLabel.text = Localizable.string(for: LocalizedKey.AccessibilitySemantics.currency.key)
+        if isAccessibilityFixed {
+            songsDescriptionLabel.text = Localizable.string(for: LocalizedKey.AccessibilitySemantics.imagesAndButtonsDescriptionFixed.key)
+            barButtonDescriptionLabel.text = Localizable.string(for: LocalizedKey.AccessibilitySemantics.toolBarButtonDescriptionFixed.key)
+            timeAndDateDescriptionLabel.text = Localizable.string(for: LocalizedKey.AccessibilitySemantics.timeAndDateDescriptionFixed.key)
+            currencyDescriptionLabel.text = Localizable.string(for: LocalizedKey.AccessibilitySemantics.currencyDescriptionFixed.key)
+        } else {
+            songsDescriptionLabel.text = Localizable.string(for: LocalizedKey.AccessibilitySemantics.imagesAndButtonsDescriptionBroken.key)
+            barButtonDescriptionLabel.text = Localizable.string(for: LocalizedKey.AccessibilitySemantics.toolBarButtonDescriptionBroken.key)
+            timeAndDateDescriptionLabel.text = Localizable.string(for: LocalizedKey.AccessibilitySemantics.timeAndDateDescriptionBroken.key)
+            currencyDescriptionLabel.text = Localizable.string(for: LocalizedKey.AccessibilitySemantics.currencyDescriptionBroken.key)
+        }
+    }
 
-        // Fix to provide an image discription
-        // Because imageViews are not accessible by default in UIKit, we first have to set isAccessibilityElement to true to make them accessible
+    // MARK: - Accessibility
+    private func setUpAccessibility() {
+        addButton?.accessibilityLabel = Localizable.string(for: Localizable.string(for: LocalizedKey.AccessibilitySemantics.addFavouriteAccessibilityLabel.key))
+
+        buySongOneButton.accessibilityLabel = Localizable.string(for: Localizable.string(for: LocalizedKey.AccessibilitySemantics.buySongOneAccessibilityLabel.key))
+        buySongTwoButton.accessibilityLabel = Localizable.string(for: LocalizedKey.AccessibilitySemantics.buySongTwoAccessibilityLabel.key)
+
         songOneImageView.isAccessibilityElement = true
-        songOneImageView.accessibilityLabel = Localizable.string(for: "Green musical note")
+        songOneImageView.accessibilityLabel = Localizable.string(for: LocalizedKey.AccessibilitySemantics.greenMusicalNote.key)
+
         songTwoImageView.isAccessibilityElement = true
-        songTwoImageView.accessibilityLabel = Localizable.string(for: "Yellow musical note")
+        songTwoImageView.accessibilityLabel = Localizable.string(for: LocalizedKey.AccessibilitySemantics.yellowMusicalNote.key)
 
         timeLabel.accessibilityLabel = getTimeString(for: timeLabel?.text)
         currencyLabel.accessibilityLabel = getCurrencyString(for: 1500.50)
-
     }
 
+    // MARK: - Helpers
     private func getTimeString(for timeString: String?) -> String? {
         let timeFormatter = DateFormatter()
         timeFormatter.dateFormat = "mm:ss"

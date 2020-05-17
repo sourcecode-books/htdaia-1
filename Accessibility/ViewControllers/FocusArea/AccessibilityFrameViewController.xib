@@ -10,6 +10,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccessibilityFrameViewController" customModule="Accessibility" customModuleProvider="target">
             <connections>
                 <outlet property="button" destination="Gic-A0-0JR" id="VrU-F5-aXm"/>
+                <outlet property="descriptionLabel" destination="C1t-QX-FCD" id="uPA-8Z-r2k"/>
+                <outlet property="titleLabel" destination="zQQ-zk-PxP" id="YBe-t2-sBB"/>
                 <outlet property="view" destination="h2C-d2-ywF" id="PPZ-N6-LdF"/>
             </connections>
         </placeholder>
@@ -21,7 +23,7 @@
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="3F0-NF-Ya2">
                     <rect key="frame" x="16" y="76" width="382" height="167"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Focus Area Fixed" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQQ-zk-PxP">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Focus Area" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQQ-zk-PxP">
                             <rect key="frame" x="0.0" y="0.0" width="382" height="26.5"/>
                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                             <nil key="textColor"/>
