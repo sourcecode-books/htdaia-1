@@ -27,9 +27,11 @@ final class AccessibilityViewIsModalViewController: AccessibilityConfigurableVie
             setUpAccessibility()
         }
         closeButton.addTarget(self, action: #selector(close), for: .touchUpInside)
+        closeButton.layer.cornerRadius = 5.0
         dimmedBackgroundView.alpha = 0
         popUpView.alpha = 0
         popUpView.layer.cornerRadius = 5.0
+        showModalButton.layer.cornerRadius = 5.0
     }
 
     private func setLabels() {
