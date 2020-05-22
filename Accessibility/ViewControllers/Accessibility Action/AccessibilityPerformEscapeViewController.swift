@@ -58,7 +58,9 @@ final class AccessibilityPerformEscapeViewController: AccessibilityConfigurableV
     }
 
     override func accessibilityPerformEscape() -> Bool {
-        close()
+        if isAccessibilityFixed {
+            close()
+        }
         return true
     }
 
