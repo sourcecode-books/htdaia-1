@@ -9,5 +9,6 @@
 import UIKit
 
 final class DynamicLabelsViewController: AccessibilityConfigurableViewController {
+
     
 }
