@@ -33,7 +33,7 @@ final class AccessibilityTraitsViewController: AccessibilityConfigurableViewCont
     }
 
     // MARK: - User actions
-    private func openURL() {
+    @objc private func openURL() {
         let url = URL(string: "http://www.apple.com")!
         if UIApplication.shared.canOpenURL(url) {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
