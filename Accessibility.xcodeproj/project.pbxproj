@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		90042E222465B0EA00EB321F /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90042E212465B0EA00EB321F /* Section.swift */; };
+		901AA46C2478269E0093BBE1 /* DynamicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901AA46A2478269E0093BBE1 /* DynamicTableViewCell.swift */; };
+		901AA46D2478269E0093BBE1 /* DynamicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 901AA46B2478269E0093BBE1 /* DynamicTableViewCell.xib */; };
 		9020926A2467648000BC4B9D /* IsAccessibilityElementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902092682467648000BC4B9D /* IsAccessibilityElementViewController.swift */; };
 		9020926B2467648000BC4B9D /* IsAccessibilityElementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 902092692467648000BC4B9D /* IsAccessibilityElementViewController.xib */; };
 		9020926E246765F500BC4B9D /* AccessibilityConfigurableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020926D246765F500BC4B9D /* AccessibilityConfigurableViewController.swift */; };
@@ -96,6 +98,8 @@
 
 /* Begin PBXFileReference section */
 		90042E212465B0EA00EB321F /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		901AA46A2478269E0093BBE1 /* DynamicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTableViewCell.swift; sourceTree = "<group>"; };
+		901AA46B2478269E0093BBE1 /* DynamicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicTableViewCell.xib; sourceTree = "<group>"; };
 		902092682467648000BC4B9D /* IsAccessibilityElementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsAccessibilityElementViewController.swift; sourceTree = "<group>"; };
 		902092692467648000BC4B9D /* IsAccessibilityElementViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IsAccessibilityElementViewController.xib; sourceTree = "<group>"; };
 		9020926D246765F500BC4B9D /* AccessibilityConfigurableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityConfigurableViewController.swift; sourceTree = "<group>"; };
@@ -204,6 +208,15 @@
 				90EEF39C246FD53E000C9724 /* LocalizedKey.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		901AA46E247826AC0093BBE1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				901AA46A2478269E0093BBE1 /* DynamicTableViewCell.swift */,
+				901AA46B2478269E0093BBE1 /* DynamicTableViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		9020926C246765D500BC4B9D /* Protocols */ = {
@@ -340,6 +353,7 @@
 		902092772468259600BC4B9D /* Dynamic Type */ = {
 			isa = PBXGroup;
 			children = (
+				901AA46E247826AC0093BBE1 /* View */,
 				90F7081324684364006CDE08 /* DynamicLabelsViewController.swift */,
 				90F708152468437B006CDE08 /* DynamicLabelsViewController.xib */,
 				90F708172468438B006CDE08 /* DynamicImagesViewController.swift */,
@@ -522,6 +536,7 @@
 				90F70806246842AC006CDE08 /* LayoutChangedViewController.xib in Resources */,
 				90F7080224684281006CDE08 /* ScreenChangedViewController.xib in Resources */,
 				90F707D624683FBF006CDE08 /* AccessibilityViewIsModalViewController.xib in Resources */,
+				901AA46D2478269E0093BBE1 /* DynamicTableViewCell.xib in Resources */,
 				9020929024682ADF00BC4B9D /* AccessibilityValueViewController.xib in Resources */,
 				90F707DE246840A3006CDE08 /* GroupViewsViewController.xib in Resources */,
 				90F707CA24683DF0006CDE08 /* LanguageViewController.xib in Resources */,
@@ -583,6 +598,7 @@
 				90F707E4246840FE006CDE08 /* AccessibilityNavigationStyleViewController.swift in Sources */,
 				90F707E82468414C006CDE08 /* AccessibilityActivateViewController.swift in Sources */,
 				90209289246825D700BC4B9D /* AccessibilityLabelViewController.swift in Sources */,
+				901AA46C2478269E0093BBE1 /* DynamicTableViewCell.swift in Sources */,
 				90042E222465B0EA00EB321F /* Section.swift in Sources */,
 				90209286246825D700BC4B9D /* AccessibilityHintViewController.swift in Sources */,
 			);

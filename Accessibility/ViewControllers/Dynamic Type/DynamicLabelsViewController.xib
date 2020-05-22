@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DynamicLabelsViewController" customModule="Accessibility" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="8bA-Fi-7hR" id="8Ba-sz-Zet"/>
                 <outlet property="view" destination="iN0-l3-epB" id="CSW-ff-scD"/>
             </connections>
         </placeholder>
@@ -16,7 +17,19 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8bA-Fi-7hR">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="8bA-Fi-7hR" secondAttribute="bottom" id="iTT-Q2-QgP"/>
+                <constraint firstItem="8bA-Fi-7hR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="vmc-79-w0a"/>
+                <constraint firstItem="8bA-Fi-7hR" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="wGW-na-dms"/>
+                <constraint firstItem="8bA-Fi-7hR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ykc-Om-7VB"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="137.68115942028987" y="130.58035714285714"/>
         </view>

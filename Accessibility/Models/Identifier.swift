@@ -8,11 +8,19 @@
 
 import Foundation
 
-
 enum TableViewCell: String {
     case defaultCell = "defaultCell"
+    case dynamicTypeCell = "DynamicTypeCell"
 
     var identifier: String {
             return self.rawValue
+    }
+}
+
+enum Nib: String {
+    case dynamicTableViewCell = "DynamicTableViewCell"
+
+    var name: String {
+        return self.rawValue
     }
 }

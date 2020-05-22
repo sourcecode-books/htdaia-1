@@ -97,3 +97,9 @@
 "Jeroen de Vrind" = "Jeroen de Vrind";
 "email@me.com" = "email@me.com";
 
+"This is title one" = "This is title one";
+"This is title two" = "This is title two";
+"This is title three" = "This is title three";
+"This is the description for the tableview cell. When the text grows the cell should expand." = "This is the description for the tableview cell. When the text grows the cell should expand.";
+"A mail has been sent" = "A mail has been sent";
+"Check your mail and activate your account by clicking the link." = "Check your mail and activate your account by clicking the link.";

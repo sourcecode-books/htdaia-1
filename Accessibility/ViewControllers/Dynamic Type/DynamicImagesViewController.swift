@@ -28,6 +28,8 @@ final class DynamicImagesViewController: AccessibilityConfigurableViewController
         if isAccessibilityFixed {
             setUpAccessibility()
         }
+        titleLabel.text = Localizable.string(for: LocalizedKey.DynamicType.mailHasBeenSent.key)
+        descriptionLabel.text = Localizable.string(for: LocalizedKey.DynamicType.mailHasBeenSentDescription.key)
         button.setTitle(Localizable.string(for: "Close"), for: .normal)
         preferredFontLabel.text = "\(UITraitCollection.current.preferredContentSizeCategory.rawValue)"
     }

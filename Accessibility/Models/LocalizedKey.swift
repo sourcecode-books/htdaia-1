@@ -107,4 +107,15 @@ enum LocalizedKey {
 
         var key: String { return self.rawValue }
     }
+
+    enum DynamicType: String {
+        case titleOne = "This is title one"
+        case titleTwo = "This is title two"
+        case titleThree = "This is title three"
+        case descriptionCell = "This is the description for the tableview cell. When the text grows the cell should expand."
+        case mailHasBeenSent = "A mail has been sent"
+        case mailHasBeenSentDescription = "Check your mail and activate your account by clicking the link."
+
+        var key: String { return self.rawValue }
+    }
 }
