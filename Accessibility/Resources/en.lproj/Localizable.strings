@@ -97,6 +97,11 @@
 "Jeroen de Vrind" = "Jeroen de Vrind";
 "email@me.com" = "email@me.com";
 
+"UINavigationBar has accessibilityPerformEscape() baked in. If the VoiceOver user makes a Z-sign with 2 fingers the view will pop off the stack. But a custom modal will not close." = "UINavigationBar has accessibilityPerformEscape() baked in. If the VoiceOver user makes a Z-sign with 2 fingers the view will pop off the stack. But a custom modal will not close.";
+"By implementing accessibilityPerformEscape() the VoiceOver user can close screens by making a Z-sign with 2 fingers. The custom modal will now close." = "By implementing accessibilityPerformEscape() the VoiceOver user can close screens by making a Z-sign with 2 fingers. The custom modal will now close.";
+"Escape the screen!" = "Escape the screen!";
+"Don't press the close button, but make a Z-gesture with two fingers to close it." = "Don't press the close button, but make a Z-gesture with two fingers to close it.";
+
 "This is title one" = "This is title one";
 "This is title two" = "This is title two";
 "This is title three" = "This is title three";

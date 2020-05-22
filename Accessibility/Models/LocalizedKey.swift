@@ -108,6 +108,17 @@ enum LocalizedKey {
         var key: String { return self.rawValue }
     }
 
+    enum AccessibilityAction: String {
+        case accessibilityPerformEscapeBroken = "UINavigationBar has accessibilityPerformEscape() baked in. If the VoiceOver user makes a Z-sign with 2 fingers the view will pop off the stack. But a custom modal will not close."
+        case accessibilityPerformEscapeFixed = "By implementing accessibilityPerformEscape() the VoiceOver user can close screens by making a Z-sign with 2 fingers. The custom modal will now close."
+        case showModalButtonTitle = "Show modal"
+        case popUpTitle = "Escape the screen!"
+        case popUpDescription = "Don't press the close button, but make a Z-gesture with two fingers to close it."
+        case closeButtonTitle = "Close"
+
+        var key: String { return self.rawValue }
+    }
+
     enum DynamicType: String {
         case titleOne = "This is title one"
         case titleTwo = "This is title two"
