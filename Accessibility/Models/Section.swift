@@ -98,7 +98,7 @@ enum Notifications: String, Item {
 }
 
 enum DynamicType: String, Item {
-    case dynamicLabels = "Dynamic Labels"
+    case dynamicLabelsTableView = "Dynamic Labels Table View"
     case dynamicImages = "Dynamic Images"
     case largeContentViewer = "Large Content Viewer"
 }

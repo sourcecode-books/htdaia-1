@@ -59,7 +59,7 @@ let bookSections = [
                         Notifications.announcementDidFinish]),
 
     SectionGroup(section: .dynamicType,
-                 items: [DynamicType.dynamicLabels,
+                 items: [DynamicType.dynamicLabelsTableView,
                         DynamicType.dynamicImages,
                         DynamicType.largeContentViewer])
 ]

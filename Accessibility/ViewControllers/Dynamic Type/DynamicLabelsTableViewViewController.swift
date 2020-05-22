@@ -1,5 +1,5 @@
 //
-//  DynamicLabelsViewController.swift
+//  DynamicLabelsTableViewViewController.swift
 //  Accessibility
 //
 //  Created by Jeroen de Vrind on 10/05/2020.
@@ -14,7 +14,7 @@ struct DynamicTypeViewModel {
     let description: String
 }
 
-final class DynamicLabelsViewController: AccessibilityConfigurableViewController {
+final class DynamicLabelsTableViewViewController: AccessibilityConfigurableViewController {
 
     // MARK: - IBOutlets
     @IBOutlet weak var tableView: UITableView!
@@ -36,7 +36,7 @@ final class DynamicLabelsViewController: AccessibilityConfigurableViewController
 
 }
 
-extension DynamicLabelsViewController: UITableViewDataSource {
+extension DynamicLabelsTableViewViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModels.count
     }

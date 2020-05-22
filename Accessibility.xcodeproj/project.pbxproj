@@ -88,8 +88,8 @@
 		90F7080E2468430C006CDE08 /* AnnouncementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F7080D2468430C006CDE08 /* AnnouncementViewController.xib */; };
 		90F7081024684324006CDE08 /* AnnouncementDidFinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F7080F24684324006CDE08 /* AnnouncementDidFinishViewController.swift */; };
 		90F708122468433E006CDE08 /* AnnouncementDidFinishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F708112468433E006CDE08 /* AnnouncementDidFinishViewController.xib */; };
-		90F7081424684364006CDE08 /* DynamicLabelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F7081324684364006CDE08 /* DynamicLabelsViewController.swift */; };
-		90F708162468437B006CDE08 /* DynamicLabelsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F708152468437B006CDE08 /* DynamicLabelsViewController.xib */; };
+		90F7081424684364006CDE08 /* DynamicLabelsTableViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F7081324684364006CDE08 /* DynamicLabelsTableViewViewController.swift */; };
+		90F708162468437B006CDE08 /* DynamicLabelsTableViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F708152468437B006CDE08 /* DynamicLabelsTableViewViewController.xib */; };
 		90F708182468438B006CDE08 /* DynamicImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F708172468438B006CDE08 /* DynamicImagesViewController.swift */; };
 		90F7081A2468439D006CDE08 /* DynamicImagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F708192468439D006CDE08 /* DynamicImagesViewController.xib */; };
 		90F7081C246843B2006CDE08 /* LargeContentViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F7081B246843B2006CDE08 /* LargeContentViewerViewController.swift */; };
@@ -180,8 +180,8 @@
 		90F7080D2468430C006CDE08 /* AnnouncementViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnnouncementViewController.xib; sourceTree = "<group>"; };
 		90F7080F24684324006CDE08 /* AnnouncementDidFinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementDidFinishViewController.swift; sourceTree = "<group>"; };
 		90F708112468433E006CDE08 /* AnnouncementDidFinishViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnnouncementDidFinishViewController.xib; sourceTree = "<group>"; };
-		90F7081324684364006CDE08 /* DynamicLabelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicLabelsViewController.swift; sourceTree = "<group>"; };
-		90F708152468437B006CDE08 /* DynamicLabelsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicLabelsViewController.xib; sourceTree = "<group>"; };
+		90F7081324684364006CDE08 /* DynamicLabelsTableViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicLabelsTableViewViewController.swift; sourceTree = "<group>"; };
+		90F708152468437B006CDE08 /* DynamicLabelsTableViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicLabelsTableViewViewController.xib; sourceTree = "<group>"; };
 		90F708172468438B006CDE08 /* DynamicImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicImagesViewController.swift; sourceTree = "<group>"; };
 		90F708192468439D006CDE08 /* DynamicImagesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicImagesViewController.xib; sourceTree = "<group>"; };
 		90F7081B246843B2006CDE08 /* LargeContentViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeContentViewerViewController.swift; sourceTree = "<group>"; };
@@ -354,8 +354,8 @@
 			isa = PBXGroup;
 			children = (
 				901AA46E247826AC0093BBE1 /* View */,
-				90F7081324684364006CDE08 /* DynamicLabelsViewController.swift */,
-				90F708152468437B006CDE08 /* DynamicLabelsViewController.xib */,
+				90F7081324684364006CDE08 /* DynamicLabelsTableViewViewController.swift */,
+				90F708152468437B006CDE08 /* DynamicLabelsTableViewViewController.xib */,
 				90F708172468438B006CDE08 /* DynamicImagesViewController.swift */,
 				90F708192468439D006CDE08 /* DynamicImagesViewController.xib */,
 				90F7081B246843B2006CDE08 /* LargeContentViewerViewController.swift */,
@@ -529,7 +529,7 @@
 				90F707E2246840E6006CDE08 /* ShouldGroupAccessibilityChildrenViewController.xib in Resources */,
 				909630B42465A99E0056333C /* Assets.xcassets in Resources */,
 				9020929824682CD100BC4B9D /* AccessibilityFrameScrollViewViewController.xib in Resources */,
-				90F708162468437B006CDE08 /* DynamicLabelsViewController.xib in Resources */,
+				90F708162468437B006CDE08 /* DynamicLabelsTableViewViewController.xib in Resources */,
 				90F707EA2468415F006CDE08 /* AccessibilityActivateViewController.xib in Resources */,
 				90F707DA24684079006CDE08 /* AccessibilityElementsViewController.xib in Resources */,
 				90F707FA24684221006CDE08 /* AccessibilityPerformEscapeViewController.xib in Resources */,
@@ -564,7 +564,7 @@
 				9020926E246765F500BC4B9D /* AccessibilityConfigurableViewController.swift in Sources */,
 				90F707D224683FAA006CDE08 /* AccessibilityViewIsModalViewController.swift in Sources */,
 				909630AF2465A99D0056333C /* SectionsViewController.swift in Sources */,
-				90F7081424684364006CDE08 /* DynamicLabelsViewController.swift in Sources */,
+				90F7081424684364006CDE08 /* DynamicLabelsTableViewViewController.swift in Sources */,
 				90F707C424683D3B006CDE08 /* PhoneticViewController.swift in Sources */,
 				90F7080C246842EF006CDE08 /* AnnouncementViewController.swift in Sources */,
 				90E77B082467441700574FD2 /* Localizable.swift in Sources */,
