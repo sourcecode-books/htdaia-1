@@ -108,3 +108,7 @@
 "This is the description for the tableview cell. When the text grows the cell should expand." = "This is the description for the tableview cell. When the text grows the cell should expand.";
 "A mail has been sent" = "A mail has been sent";
 "Check your mail and activate your account by clicking the link." = "Check your mail and activate your account by clicking the link.";
+
+"Loading" = "Loading";
+"Completed" = "Completed";
+"Start" = "Start";

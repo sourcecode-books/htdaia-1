@@ -8,8 +8,16 @@
 
 import Foundation
 
+protocol KeyRepresentable where Self: RawRepresentable, RawValue == String {
+    var key: String { get }
+}
+
+extension KeyRepresentable {
+    var key: String { return self.rawValue }
+}
+
 enum LocalizedKey {
-    enum IsAccessibilityElement: String {
+    enum IsAccessibilityElement: String, KeyRepresentable {
         case defaultTitle = "No isAccessibilityElement set by default"
         case defaultDescriptionBroken = "An UIImageView is not accessible by default in UIKit:"
         case defaultDescriptionFixed = "Setting isAccessibilityElement to true makes it accessible:"
@@ -22,11 +30,9 @@ enum LocalizedKey {
         case customViewsTitle = "Custom Views"
         case customViewsDescriptionBroken = "Custom views have no accessibility properties or have isAccessibilityElement set to false by default:"
         case customViewsDescriptionFixed = "If the custom view inherits from UIView, set isAccessibilityElement to true:"
-
-        var key: String { return self.rawValue }
     }
 
-    enum AccessibilitySemantics: String {
+    enum AccessibilitySemantics: String,KeyRepresentable {
         case toolBarButtonDescriptionBroken = "The toolbar button in the navigationBar speaks the name of the image or VoiceOver tries to guess what it means."
         case toolBarButtonDescriptionFixed = "Now the toolbar button has an accessibility label and is clearly spoken as 'Add favourite'."
         case imagesAndButtonsDescriptionBroken = "Images are not spoken by default. The image name is spoken or VoiceOver tries to guess. Also the buttons are not uniquely identifiable."
@@ -53,22 +59,18 @@ enum LocalizedKey {
         case downloadButtonHint = "Downloads the selected documents."
 
         case dailyLimit = "Daily Limit"
-
-        var key: String { return self.rawValue }
     }
 
-    enum CustomizingSpeech: String {
+    enum CustomizingSpeech: String, KeyRepresentable {
         case highPitch = "This label is spoken with a high pitch."
         case lowPitch = "This label is spoken with a low pitch."
         case punctuation = "Swift: if result == 3 { print('Correct') }"
         case spellOut = "+31-6-12345xxx\nNL17ABNA00012345xx"
         case language = "The french man said: 'Bonjour!'"
         case phonetic = "The broadcast is live."
-
-        var key: String { return self.rawValue }
     }
 
-    enum Discoverability: String {
+    enum Discoverability: String, KeyRepresentable {
         case brightnessTitle = "Brightness."
         case accessibilityElementHiddenDescriptionBroken = "This view is a transient view that doesn't need to be spoken. The aural feedback and button context is enough. But the label of the pop-up view is still accessible."
         case accessibilityElementHiddenDescriptionFixed = "With accessibilityElementsHidden you can hide all the child elements for the assistive technologies. Same as setting isAccessibilityElement to false on each child element."
@@ -80,11 +82,9 @@ enum LocalizedKey {
         case popUpTitle = "You Are On Fire!"
         case popUpDescription = "The assistive technology should focus on this bottom sheet to provide the right context."
         case closeButtonTitle = "Close"
-
-        var key: String { return self.rawValue }
     }
 
-    enum FocusArea: String {
+    enum FocusArea: String, KeyRepresentable {
         case focusAreaTitle = "Focus Area"
         case accessibilityFrameDescription = "The accessibility frame and path need to be set to the view's frame in on-screen coordinates."
         case accessibilityFrameButtonTitle = "Focus on me with VoiceOver on"
@@ -95,38 +95,36 @@ enum LocalizedKey {
         case colorModePreference = "Color mode preference"
         case accessibilityActivationPointBroken = "The label is separate from the paint button. To make it one clickable element you can put both the label and button in a container and make it accessible. But the activation point will be on the center of the container by default."
         case accessibilityActivationPointFixed
-
-        var key: String { return self.rawValue }
     }
 
-    enum GroupingAndOrder: String {
+    enum GroupingAndOrder: String, KeyRepresentable {
         case name = "Name:"
         case email = "Email:"
         case person = "Jeroen de Vrind"
         case emailPerson = "email@me.com"
-
-        var key: String { return self.rawValue }
     }
 
-    enum AccessibilityAction: String {
+    enum AccessibilityAction: String, KeyRepresentable {
         case accessibilityPerformEscapeBroken = "UINavigationBar has accessibilityPerformEscape() baked in. If the VoiceOver user makes a Z-sign with 2 fingers the view will pop off the stack. But a custom modal will not close."
         case accessibilityPerformEscapeFixed = "By implementing accessibilityPerformEscape() the VoiceOver user can close screens by making a Z-sign with 2 fingers. The custom modal will now close."
         case showModalButtonTitle = "Show modal"
         case popUpTitle = "Escape the screen!"
         case popUpDescription = "Don't press the close button, but make a Z-gesture with two fingers to close it."
         case closeButtonTitle = "Close"
-
-        var key: String { return self.rawValue }
     }
 
-    enum DynamicType: String {
+    enum Notifications: String, KeyRepresentable {
+        case loading = "Loading"
+        case completed = "Completed"
+        case start = "Start"
+    }
+
+    enum DynamicType: String, KeyRepresentable {
         case titleOne = "This is title one"
         case titleTwo = "This is title two"
         case titleThree = "This is title three"
         case descriptionCell = "This is the description for the tableview cell. When the text grows the cell should expand."
         case mailHasBeenSent = "A mail has been sent"
         case mailHasBeenSentDescription = "Check your mail and activate your account by clicking the link."
-
-        var key: String { return self.rawValue }
     }
 }
