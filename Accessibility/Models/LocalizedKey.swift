@@ -111,6 +111,11 @@ enum LocalizedKey {
         case popUpTitle = "Escape the screen!"
         case popUpDescription = "Don't press the close button, but make a Z-gesture with two fingers to close it."
         case closeButtonTitle = "Close"
+        case magicTapDescription = "By performing a double tap with 2 fingers, VoiceOver users can toggle between the main actions of a particular screen. In this case playing and pausing the animation."
+        case pauseAnimation = "pause animation"
+        case playAnimation = "play animation"
+        case purpleBoxAnimating = "Purple box is growing smaller and bigger repeatedly."
+        case purpleBox = "Purple box."
     }
 
     enum Notifications: String, KeyRepresentable {

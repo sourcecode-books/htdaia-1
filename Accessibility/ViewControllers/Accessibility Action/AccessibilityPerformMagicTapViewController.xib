@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -9,6 +9,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccessibilityPerformMagicTapViewController" customModule="Accessibility" customModuleProvider="target">
             <connections>
+                <outlet property="descriptionLabel" destination="SJ3-AC-wlp" id="o2N-Ue-fB1"/>
+                <outlet property="playPauseButton" destination="iSG-8I-PGS" id="a0G-lT-T9L"/>
+                <outlet property="purpleBox" destination="hyP-gL-FFL" id="ekh-iQ-aDF"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Nz9-9A-r01"/>
             </connections>
         </placeholder>
@@ -16,9 +19,48 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSG-8I-PGS">
+                    <rect key="frame" x="191" y="530" width="32.5" height="36"/>
+                    <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" image="play.fill" catalog="system">
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="large"/>
+                    </state>
+                    <connections>
+                        <action selector="toggle" destination="-1" eventType="touchUpInside" id="7o2-hI-hzn"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hyP-gL-FFL">
+                    <rect key="frame" x="147" y="388" width="120" height="120"/>
+                    <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" priority="999" constant="120" id="4oS-pK-POn"/>
+                        <constraint firstAttribute="width" priority="999" constant="120" id="hVS-yg-Nmu"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJ3-AC-wlp">
+                    <rect key="frame" x="16" y="108" width="382" height="86.5"/>
+                    <string key="text">By performing a double tap with 2 fingers, VoiceOver users can toggle between the main actions of a particular screen. In this case playing and pausing the animation.</string>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="iSG-8I-PGS" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="100" id="0lj-kK-75R"/>
+                <constraint firstItem="iSG-8I-PGS" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="4Lg-YZ-Bfi"/>
+                <constraint firstItem="hyP-gL-FFL" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="5uK-Tm-o8G"/>
+                <constraint firstItem="SJ3-AC-wlp" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="64" id="V7g-0C-yhv"/>
+                <constraint firstAttribute="trailing" secondItem="SJ3-AC-wlp" secondAttribute="trailing" constant="16" id="lc6-BB-Rzf"/>
+                <constraint firstItem="SJ3-AC-wlp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="te1-PO-kbU"/>
+                <constraint firstItem="hyP-gL-FFL" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="zPG-zN-8XA"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <point key="canvasLocation" x="139" y="131"/>
+            <point key="canvasLocation" x="137.68115942028987" y="130.58035714285714"/>
         </view>
     </objects>
+    <resources>
+        <image name="play.fill" catalog="system" width="116" height="128"/>
+    </resources>
 </document>

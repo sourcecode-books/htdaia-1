@@ -101,6 +101,11 @@
 "By implementing accessibilityPerformEscape() the VoiceOver user can close screens by making a Z-sign with 2 fingers. The custom modal will now close." = "By implementing accessibilityPerformEscape() the VoiceOver user can close screens by making a Z-sign with 2 fingers. The custom modal will now close.";
 "Escape the screen!" = "Escape the screen!";
 "Don't press the close button, but make a Z-gesture with two fingers to close it." = "Don't press the close button, but make a Z-gesture with two fingers to close it.";
+"By performing a double tap with 2 fingers, VoiceOver users can toggle between the main actions of a particular screen. In this case playing and pausing the animation." = "By performing a double tap with 2 fingers, VoiceOver users can toggle between the main actions of a particular screen. In this case playing and pausing the animation.";
+"pause animation" = "pause animation";
+"play animation" = "play animation";
+"Purple box is growing smaller and bigger repeatedly." = "Purple box is growing smaller and bigger repeatedly.";
+"Purple box." = "Purple box.";
 
 "This is title one" = "This is title one";
 "This is title two" = "This is title two";
