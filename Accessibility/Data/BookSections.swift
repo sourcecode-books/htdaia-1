@@ -10,56 +10,70 @@ import Foundation
 
 let bookSections = [
     SectionGroup(section: .accessibilityElement,
-                 items: [AccessibilityElement.isAccessibilityElement,
-                         AccessibilityElement.customElements]),
+                 items: [
+                    AccessibilityElement.isAccessibilityElement,
+                    // AccessibilityElement.customElements
+    ]),
 
     SectionGroup(section: .accessibilitySemantics,
-                 items: [AccessibilitySemantics.accessibilityLabel,
-                         AccessibilitySemantics.accessibilityHint,
-                         AccessibilitySemantics.accessibilityTraits,
-                         AccessibilitySemantics.accessibilityValue,
-                         AccessibilitySemantics.accessibilityLanguage]),
+                 items: [
+                    AccessibilitySemantics.accessibilityLabel,
+                    AccessibilitySemantics.accessibilityHint,
+                    AccessibilitySemantics.accessibilityTraits,
+                    AccessibilitySemantics.accessibilityValue,
+                    AccessibilitySemantics.accessibilityLanguage]),
 
     SectionGroup(section: .customizingSpeech,
-                 items: [CustomizingSpeech.pitch,
-                         CustomizingSpeech.punctuation,
-                         CustomizingSpeech.spellOut,
-                         CustomizingSpeech.language,
-                         CustomizingSpeech.phonetic]),
+                 items: [
+                    CustomizingSpeech.pitch,
+                    CustomizingSpeech.punctuation,
+                    CustomizingSpeech.spellOut,
+                    CustomizingSpeech.language,
+                    CustomizingSpeech.phonetic]),
 
     SectionGroup(section: .discoverability,
-                 items: [Discoverability.accessibilityElementsHidden,
-                        Discoverability.accessibilityViewIsModal]),
+                 items: [
+                    Discoverability.accessibilityElementsHidden,
+                    Discoverability.accessibilityViewIsModal]),
 
     SectionGroup(section: .focusArea,
-                 items: [FocusArea.accessibilityFrame,
-                        FocusArea.accessibilityFrameScrollView,
-                        FocusArea.accessibilityFrameNotOverlapping,
-                        FocusArea.accessibilityActivationPoint]),
+                 items: [
+                    FocusArea.accessibilityFrame,
+                    FocusArea.accessibilityFrameScrollView,
+                    FocusArea.accessibilityFrameNotOverlapping,
+                    FocusArea.accessibilityActivationPoint]),
 
     SectionGroup(section: .groupingAndOrder,
-                 items: [GroupingAndOrder.accessibilityElements,
-                        GroupingAndOrder.groupViews,
-                        GroupingAndOrder.shouldGroupAccessibilityChildren,
-                        GroupingAndOrder.accessibilityNavigationStyle]),
+                 items: [
+                    GroupingAndOrder.accessibilityElements,
+                    GroupingAndOrder.groupViews,
+                    GroupingAndOrder.shouldGroupAccessibilityChildren,
+                    // GroupingAndOrder.accessibilityNavigationStyle
+    ]),
 
     SectionGroup(section: .accessibilityAction,
-                 items: [AccessibilityAction.accessibilityActivate,
-                        AccessibilityAction.accessibilityCustomAction,
-                        AccessibilityAction.accessibilityScroll,
-                        AccessibilityAction.accessibilityDecrementAndIncrement,
-                        AccessibilityAction.accessibilityPerformEscape,
-                        AccessibilityAction.accessibilityPerformMagicTap]),
+                 items: [
+                    // AccessibilityAction.accessibilityActivate,
+                    // AccessibilityAction.accessibilityCustomAction,
+                    // AccessibilityAction.accessibilityScroll,
+                    AccessibilityAction.accessibilityDecrementAndIncrement,
+                    AccessibilityAction.accessibilityPerformEscape,
+                    AccessibilityAction.accessibilityPerformMagicTap
+    ]),
 
     SectionGroup(section: .notifications,
-                 items: [Notifications.screenChanged,
-                        Notifications.layoutChanged,
-                        Notifications.pageScrolled,
-                        Notifications.announcement,
-                        Notifications.announcementDidFinish]),
+                 items: [
+                    // Notifications.screenChanged,
+                    // Notifications.layoutChanged,
+                    // Notifications.pageScrolled,
+                    Notifications.announcement,
+                    // Notifications.announcementDidFinish
+    ]),
 
     SectionGroup(section: .dynamicType,
-                 items: [DynamicType.dynamicLabelsTableView,
-                        DynamicType.dynamicImages,
-                        DynamicType.largeContentViewer])
+                 items: [
+                    DynamicType.dynamicLabelsTableView,
+                    DynamicType.dynamicImages,
+                    DynamicType.largeContentViewer
+    ])
 ]
