@@ -36,6 +36,9 @@
 		904F7E7524675131000811FA /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904F7E7424675131000811FA /* Identifier.swift */; };
 		904F7E772467535C000811FA /* TitlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904F7E762467535C000811FA /* TitlesViewController.swift */; };
 		904F7E7924675E12000811FA /* BookSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904F7E7824675E12000811FA /* BookSections.swift */; };
+		905F35ED247914D700A265C1 /* AccessibleStepper.xib in Resources */ = {isa = PBXBuildFile; fileRef = 905F35EC247914D700A265C1 /* AccessibleStepper.xib */; };
+		905F35EF2479153500A265C1 /* AccessibleStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905F35EE2479153500A265C1 /* AccessibleStepper.swift */; };
+		905F35F22479259200A265C1 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 905F35F42479259200A265C1 /* Localizable.stringsdict */; };
 		909630AB2465A99D0056333C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909630AA2465A99D0056333C /* AppDelegate.swift */; };
 		909630AD2465A99D0056333C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909630AC2465A99D0056333C /* SceneDelegate.swift */; };
 		909630AF2465A99D0056333C /* SectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909630AE2465A99D0056333C /* SectionsViewController.swift */; };
@@ -126,6 +129,9 @@
 		904F7E7424675131000811FA /* Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
 		904F7E762467535C000811FA /* TitlesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlesViewController.swift; sourceTree = "<group>"; };
 		904F7E7824675E12000811FA /* BookSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSections.swift; sourceTree = "<group>"; };
+		905F35EC247914D700A265C1 /* AccessibleStepper.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccessibleStepper.xib; sourceTree = "<group>"; };
+		905F35EE2479153500A265C1 /* AccessibleStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibleStepper.swift; sourceTree = "<group>"; };
+		905F35F32479259200A265C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		909630A72465A99D0056333C /* Accessibility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Accessibility.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		909630AA2465A99D0056333C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		909630AC2465A99D0056333C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -317,6 +323,7 @@
 		902092752468257800BC4B9D /* Accessibility Action */ = {
 			isa = PBXGroup;
 			children = (
+				905F35EB247914B400A265C1 /* Views */,
 				90F707E72468414C006CDE08 /* AccessibilityActivateViewController.swift */,
 				90F707E92468415F006CDE08 /* AccessibilityActivateViewController.xib */,
 				90F707EB24684173006CDE08 /* AccessibilityCustomActionViewController.swift */,
@@ -370,6 +377,15 @@
 				904F7E7824675E12000811FA /* BookSections.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		905F35EB247914B400A265C1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				905F35EC247914D700A265C1 /* AccessibleStepper.xib */,
+				905F35EE2479153500A265C1 /* AccessibleStepper.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		9096309E2465A99D0056333C = {
@@ -433,6 +449,7 @@
 				909630B32465A99E0056333C /* Assets.xcassets */,
 				909630B82465A99E0056333C /* Info.plist */,
 				904F7E7224674F4C000811FA /* Localizable.strings */,
+				905F35F42479259200A265C1 /* Localizable.stringsdict */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -510,6 +527,7 @@
 				90F707F6246841F4006CDE08 /* AccessibilityDecrementAndIncrementViewController.xib in Resources */,
 				9020928C2468299F00BC4B9D /* AccessibilityLabelViewController.xib in Resources */,
 				9020929224682B5500BC4B9D /* AccessibilityLanguageViewController.xib in Resources */,
+				905F35F22479259200A265C1 /* Localizable.stringsdict in Resources */,
 				90F707BA24683CB0006CDE08 /* CustomElementsViewController.xib in Resources */,
 				90F707C624683DC8006CDE08 /* PunctuationViewController.xib in Resources */,
 				90F7081A2468439D006CDE08 /* DynamicImagesViewController.xib in Resources */,
@@ -527,6 +545,7 @@
 				9020926B2467648000BC4B9D /* IsAccessibilityElementViewController.xib in Resources */,
 				9020929E24682DB100BC4B9D /* AccessibilityActivationPointViewController.xib in Resources */,
 				90F707E2246840E6006CDE08 /* ShouldGroupAccessibilityChildrenViewController.xib in Resources */,
+				905F35ED247914D700A265C1 /* AccessibleStepper.xib in Resources */,
 				909630B42465A99E0056333C /* Assets.xcassets in Resources */,
 				9020929824682CD100BC4B9D /* AccessibilityFrameScrollViewViewController.xib in Resources */,
 				90F708162468437B006CDE08 /* DynamicLabelsTableViewViewController.xib in Resources */,
@@ -593,6 +612,7 @@
 				909630AD2465A99D0056333C /* SceneDelegate.swift in Sources */,
 				904F7E7524675131000811FA /* Identifier.swift in Sources */,
 				9020929A24682D3A00BC4B9D /* FramesNotOverlappingViewController.swift in Sources */,
+				905F35EF2479153500A265C1 /* AccessibleStepper.swift in Sources */,
 				90F7081C246843B2006CDE08 /* LargeContentViewerViewController.swift in Sources */,
 				90F708182468438B006CDE08 /* DynamicImagesViewController.swift in Sources */,
 				90F707E4246840FE006CDE08 /* AccessibilityNavigationStyleViewController.swift in Sources */,
@@ -613,6 +633,14 @@
 				904F7E7124674F4C000811FA /* en */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		905F35F42479259200A265C1 /* Localizable.stringsdict */ = {
+			isa = PBXVariantGroup;
+			children = (
+				905F35F32479259200A265C1 /* en */,
+			);
+			name = Localizable.stringsdict;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

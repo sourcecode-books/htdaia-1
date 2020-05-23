@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -9,6 +9,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccessibilityDecrementAndIncrementViewController" customModule="Accessibility" customModuleProvider="target">
             <connections>
+                <outlet property="descriptionLabel" destination="8Kk-oO-MIO" id="Rzh-pP-PQI"/>
+                <outlet property="itemsStackView" destination="ddL-be-Cpf" id="ClG-eG-7hi"/>
                 <outlet property="view" destination="iN0-l3-epB" id="99G-9X-qZo"/>
             </connections>
         </placeholder>
@@ -16,7 +18,27 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Kk-oO-MIO">
+                    <rect key="frame" x="16" y="108" width="382" height="20.5"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="ddL-be-Cpf">
+                    <rect key="frame" x="16" y="160.5" width="382" height="685.5"/>
+                </stackView>
+            </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="ddL-be-Cpf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="0k4-aI-7Z7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ddL-be-Cpf" secondAttribute="bottom" constant="16" placeholder="YES" id="15d-rZ-gxY"/>
+                <constraint firstItem="8Kk-oO-MIO" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="64" id="1h7-qk-ack"/>
+                <constraint firstItem="8Kk-oO-MIO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="NqC-UT-WXi"/>
+                <constraint firstItem="ddL-be-Cpf" firstAttribute="top" secondItem="8Kk-oO-MIO" secondAttribute="bottom" constant="32" id="Nt6-hQ-xNI"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ddL-be-Cpf" secondAttribute="trailing" constant="16" id="Qyt-kz-zcx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8Kk-oO-MIO" secondAttribute="trailing" constant="16" id="dNW-Yt-gl6"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="139" y="131"/>
         </view>

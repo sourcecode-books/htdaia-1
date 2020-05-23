@@ -105,6 +105,10 @@ enum LocalizedKey {
     }
 
     enum AccessibilityAction: String, KeyRepresentable {
+        case adjustableDescription = "Giving an element the .adjustable trait, makes it possible for the VoiceOver user to swipe up and down to adjust the value of the element. You implement the increment() and decrement() methods to do this. Instead of having individual elements, we group all the elements together and announce a combined label."
+        case peanutButter = "Peanut Butter"
+        case cheese = "Cheese"
+        case numberOfItems = "number_of_items"
         case accessibilityPerformEscapeBroken = "UINavigationBar has accessibilityPerformEscape() baked in. If the VoiceOver user makes a Z-sign with 2 fingers the view will pop off the stack. But a custom modal will not close."
         case accessibilityPerformEscapeFixed = "By implementing accessibilityPerformEscape() the VoiceOver user can close screens by making a Z-sign with 2 fingers. The custom modal will now close."
         case showModalButtonTitle = "Show modal"
