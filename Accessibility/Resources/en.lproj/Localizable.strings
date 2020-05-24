@@ -98,6 +98,11 @@
 "email@me.com" = "email@me.com";
 
 "Every element can have a VoiceOver action attached. In this simple example we take an image view and override the accessibilityActivate() -> Bool method. By double tapping the image view, it will now perform the action and become red." = "Every element can have a VoiceOver action attached. In this simple example we take an image view and override the accessibilityActivate() -> Bool method. By double tapping the image view, it will now perform the action and become red.";
+"Swipe left to reveal actions" = "Swipe left to reveal actions";
+"Swipe left is a VoiceOver gesture" = "Swipe left is a VoiceOver gesture";
+"Implement custom actions for VoiceOver users" = "Implement custom actions for VoiceOver users";
+"Mark as read" = "Mark as read";
+"Delete" = "Delete";
 "Giving an element the .adjustable trait, makes it possible for the VoiceOver user to swipe up and down to adjust the value of the element. You implement the increment() and decrement() methods to do this. Instead of having individual elements, we group all the elements together and announce a combined label." = "Giving an element the .adjustable trait, makes it possible for the VoiceOver user to swipe up and down to adjust the value of the element. You implement the increment() and decrement() methods to do this. Instead of having individual elements, we group all the elements together and announce a combined label.";
 "Peanut Butter" = "Peanut Butter";
 "Cheese" = "Cheese";

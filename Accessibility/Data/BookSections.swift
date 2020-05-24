@@ -54,7 +54,7 @@ let bookSections = [
     SectionGroup(section: .accessibilityAction,
                  items: [
                     AccessibilityAction.accessibilityActivate,
-                    // AccessibilityAction.accessibilityCustomAction,
+                    AccessibilityAction.accessibilityCustomAction,
                     // AccessibilityAction.accessibilityScroll,
                     AccessibilityAction.accessibilityDecrementAndIncrement,
                     AccessibilityAction.accessibilityPerformEscape,

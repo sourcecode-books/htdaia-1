@@ -106,6 +106,11 @@ enum LocalizedKey {
 
     enum AccessibilityAction: String, KeyRepresentable {
         case accessibilityActivateDescription = "Every element can have a VoiceOver action attached. In this simple example we take an image view and override the accessibilityActivate() -> Bool method. By double tapping the image view, it will now perform the action and become red."
+        case swipeLeft = "Swipe left to reveal actions"
+        case voiceOverGesture = "Swipe left is a VoiceOver gesture"
+        case customActions = "Implement custom actions for VoiceOver users"
+        case markAsRead = "Mark as read"
+        case delete = "Delete"
         case adjustableDescription = "Giving an element the .adjustable trait, makes it possible for the VoiceOver user to swipe up and down to adjust the value of the element. You implement the increment() and decrement() methods to do this. Instead of having individual elements, we group all the elements together and announce a combined label."
         case peanutButter = "Peanut Butter"
         case cheese = "Cheese"
