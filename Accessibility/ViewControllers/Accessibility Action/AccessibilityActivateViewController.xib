@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -9,6 +9,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccessibilityActivateViewController" customModule="Accessibility" customModuleProvider="target">
             <connections>
+                <outlet property="descriptionLabel" destination="Lh6-Sd-gAh" id="kbm-Cd-bfe"/>
+                <outlet property="imageView" destination="Jg6-iJ-lhd" id="Uys-3I-cky"/>
                 <outlet property="view" destination="iN0-l3-epB" id="MoQ-N5-68X"/>
             </connections>
         </placeholder>
@@ -16,9 +18,35 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencil.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Jg6-iJ-lhd" customClass="ActionableImageView" customModule="Accessibility" customModuleProvider="target">
+                    <rect key="frame" x="107" y="348.5" width="200" height="199"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="JkT-Ws-b4P"/>
+                        <constraint firstAttribute="width" constant="200" id="KbM-k5-ZwY"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lh6-Sd-gAh">
+                    <rect key="frame" x="16" y="612" width="382" height="130.5"/>
+                    <string key="text">Every element can have a VoiceOver action attached. In this simple example we take an image view and override the accessibilityActivate() -&gt; Bool method. By double tapping the image view, it will now perform the action and become red.</string>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="Jg6-iJ-lhd" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="0jR-ix-0jr"/>
+                <constraint firstItem="Lh6-Sd-gAh" firstAttribute="top" secondItem="Jg6-iJ-lhd" secondAttribute="bottom" constant="64" id="58C-b9-BGQ"/>
+                <constraint firstItem="Lh6-Sd-gAh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="83O-Mc-Sh1"/>
+                <constraint firstItem="Jg6-iJ-lhd" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Tai-FN-m40"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Lh6-Sd-gAh" secondAttribute="trailing" constant="16" id="gI9-CP-CWx"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="139" y="131"/>
         </view>
     </objects>
+    <resources>
+        <image name="pencil.circle" catalog="system" width="128" height="121"/>
+    </resources>
 </document>
